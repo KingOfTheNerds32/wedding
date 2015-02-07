@@ -1,0 +1,109 @@
+.overlay-container{
+  border-radius: 5px 5px 0 0;
+}
+
+.overlay{
+  border-radius: 5px 5px 0 0;
+}
+
+.image-box > .btn {
+  border-radius: 0 0 5px 5px;
+}
+
+.sub-lead{
+  font-size: 15px;
+  color: gray;
+}
+
+.slide {
+  background: black;
+
+}
+
+.story{
+/*  border: solid black 5px;
+  border-radius: 5%;
+  padding: 3%;*/
+/*  float: none;
+  display: table-cell;
+  vertical-align: top;*/
+
+}
+
+.headshot{
+  height: 300px;
+  margin: auto;
+
+}
+
+#proposal{
+    z-index : 1;
+}
+
+
+/*Timeline CSS*/
+
+.valign > [class*="col"] {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
+.time-circleBase {
+  border-radius: 50%;
+  behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+  display: inline-block;
+  vertical-align: middle;
+  border: 10px solid lightgray;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.time-small {
+    width: 150px;
+    height: 150px;
+        background-image: url("http://lorempixel.com/100/100/");
+}
+.time-medium {
+    width: 200px;
+    height: 200px;
+    background-image: url("http://lorempixel.com/200/200/");
+  }
+.time-large {
+    width: 300px;
+    height: 300px;
+    background-image: url("http://lorempixel.com/300/300/");
+}
+
+.time-right {
+  /*float: right;*/
+}
+.time-left{
+  /*float: left;*/
+}
+
+.timeline-section{
+  /*border: solid black 2px;*/
+}
+
+.timeline-row {
+    display: table;
+}
+.timeline-row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.timeline-block{
+  padding: 2em;
+  margin: 2em;
+}
+
+body{
+  font-family: 'Neucha', cursive;
+}
