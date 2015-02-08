@@ -37,6 +37,7 @@ body {
 	background-color: rgba(255, 255, 255, .1);
 	border-radius: 50%;
 	height: 0px;
+    max-height: 20px;
 	padding-bottom: 100%;
 }
 
@@ -57,7 +58,7 @@ body {
 }
 
 .text .type-time {
-	font-size: 20px;
+	font-size: 15px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
