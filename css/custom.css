@@ -105,9 +105,13 @@
 }
 
 body{
-  font-family: 'Neucha', cursive;
+  /*font-family: 'Neucha', cursive;*/
 }
 
 .infographic{
     text-align: center;
+}
+
+.info{
+    font-size: 80%;
 }
