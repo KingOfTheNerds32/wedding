@@ -1,15 +1,27 @@
 var main = function(){
    //month is zero based
-   //UTC is 8 hours different
-   var date  = new Date(Date.UTC(2015, 7, 30, 1, 30, 0));
+    //UTC is 8 hours different
+    var start = new Date(Date.UTC(2014, 10, 24, 1))
+    console.log(start);
+        start = start.getTime() / 1000;
+        var date = new Date(Date.UTC(2015, 7, 30, 1, 30, 0));
+        console.log(date);
    var now   = new Date();
-   var diff  = date.getTime()/1000 - now.getTime()/1000;
+   var diff = date.getTime() / 1000 - now.getTime() / 1000;
+   now = now.getTime() / 1000;
+   date = date.getTime() / 1000;
 
-   var clock = $('.clock').FlipClock(diff, {
-    clockFace: 'DailyCounter',
-    countdown: true
-  });
+  // var clock = $('.clock').FlipClock(diff, {
+  //  clockFace: 'DailyCounter',
+  //  countdown: true
+  //});
 
+   $('.countdown').final_countdown({
+       'start': 1362139200,
+       'end': date,
+
+       'now': now
+   });
 
    document.getElementById('links').onclick = function (event) {
     event = event || window.event;

@@ -33,7 +33,8 @@
 
 	<!-- ADDITIONAL PLUGINS -->
 	<!-- Countdown Clock -->
-	<link rel="stylesheet" href="css/flipclock/flipclock.css">
+	<!--<link rel="stylesheet" href="css/flipclock/flipclock.css">-->
+    <link rel="stylesheet" type="text/css" href="css/clock.css">
 
 	<!-- Gallery -->
 	<link rel="stylesheet" href="gallery/css/blueimp-gallery.min.css">
@@ -141,16 +142,68 @@
 		<div class="banner-image"></div>
 		<div class="banner-caption">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
-						<h1 class="text-center">Lauren <span>&</span> Michael</h1>
-						<p class="lead text-center">AUGUST 29th, 2015<br>FOUR SEASONS HOTEL, WESTLAKE VILLAGE</p>
-						<div class="clock"></div>
-					</div>
+
+                    <div class="row">
+                        <div class="col-md-12 object-non-visible" data-animation-effect="fadeIn">
+                            <h1 class="text-center">Lauren <span>&</span> Michael</h1>
+                            <p class="lead text-center">AUGUST 29th, 2015<br>FOUR SEASONS HOTEL, WESTLAKE VILLAGE</p>
+                            <!--<div class="clock"></div>-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="countdown countdown-container container">
+                            <div class="clock row">
+                                <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                                    <div class="wrap">
+                                        <div class="inner">
+                                            <div id="canvas-days" class="clock-canvas"></div>
+                                            <div class="text">
+                                                <p class="val">0</p>
+                                                <p class="type-days type-time">DAYS</p>
+                                            </div><!-- /.text -->
+                                        </div><!-- /.inner -->
+                                    </div><!-- /.wrap -->
+                                </div><!-- /.clock-item -->
+                                <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                                    <div class="wrap">
+                                        <div class="inner">
+                                            <div id="canvas-hours" class="clock-canvas"></div>
+                                            <div class="text">
+                                                <p class="val">0</p>
+                                                <p class="type-hours type-time">HOURS</p>
+                                            </div><!-- /.text -->
+                                        </div><!-- /.inner -->
+                                    </div><!-- /.wrap -->
+                                </div><!-- /.clock-item -->
+                                <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                                    <div class="wrap">
+                                        <div class="inner">
+                                            <div id="canvas-minutes" class="clock-canvas"></div>
+                                            <div class="text">
+                                                <p class="val">0</p>
+                                                <p class="type-minutes type-time">MINUTES</p>
+                                            </div><!-- /.text -->
+                                        </div><!-- /.inner -->
+                                    </div><!-- /.wrap -->
+                                </div><!-- /.clock-item -->
+                                <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                                    <div class="wrap">
+                                        <div class="inner">
+                                            <div id="canvas-seconds" class="clock-canvas"></div>
+                                            <div class="text">
+                                                <p class="val">0</p>
+                                                <p class="type-seconds type-time">SECONDS</p>
+                                            </div><!-- /.text -->
+                                        </div><!-- /.inner -->
+                                    </div><!-- /.wrap -->
+                                </div><!-- /.clock-item -->
+                            </div><!-- /.clock -->
+                        </div><!-- /.countdown-wrapper -->
+                    </div>
 				</div>
 			</div>
 		</div>
-	</div>
+
 	<!-- banner end -->
 
 	<!-- TIMELINE section start -->
@@ -1417,7 +1470,9 @@
 
 		<!-- ADDITIONAL PLUGINS -->
 		<!-- Countdown Clock -->
-		<script type="text/javascript" src="js/flipclock/flipclock.js"></script>
+		<!--<script type="text/javascript" src="js/flipclock/flipclock.js"></script>-->
+    <script type="text/javascript" src="js/kinetic.js"></script>
+    <script type="text/javascript" src="js/jquery.final-countdown.js"></script>
 
 		<!-- Gallery -->
 		<script type="text/javascript" src="gallery/js/blueimp-gallery.min.js"></script>
