@@ -58,7 +58,7 @@
 
     <!-- header start -->
     <!-- ================ -->
-    <header class="header fixed clearfix navbar navbar-fixed-top">
+    <header class="header fixed clearfix navbar navbar-fixed-top" id="custom-nav">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -205,8 +205,8 @@
     <!-- banner end -->
     <!-- TIMELINE section start -->
     <!-- ================ -->
-    <div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
-        <div id="story" class="container">
+    <div class="section clearfix object-non-visible" data-animation-effect="fadeIn" id="story">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12 infographic">1999 - It all began</div>
             </div>
@@ -361,16 +361,14 @@
                     </p>
                     <div class="space"></div>
                     <div class="row">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5 story card">
-                            <div>
+                        <div class="col-md-5 col-md-offset-1">
+                            <div class="panel">
+                            <div class="panel-heading">
                                 <img class="headshot" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/199136_990472872295_186908_n.jpg?oh=25a63dec059d665149cad305401ddbbb&oe=5526F4D7&__gda__=1433327790_225865f78d7e02b861268d67d54b2247" alt="">
                                 <div class="space"></div>
-                            </div>
-                            <div>
                                 <h2>Her Side</h2>
                             </div>
-                            <div>
+                            <div class="panel-body">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi adipisci illo, voluptatum ipsam fuga error commodi architecto, laudantium culpa tenetur at id, beatae placeat deserunt iure quas voluptas fugit eveniet.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ducimus explicabo quibusdam temporibus deserunt doloremque pariatur ea, animi a. Delectus similique atque eligendi, enim vel reiciendis deleniti neque aliquid, sit?</p>
                                 <ul class="list-unstyled">
@@ -379,25 +377,23 @@
                                     <li><i class="fa fa-caret-right pr-10 text-colored"></i> Ipsam fuga error commodi</li>
                                 </ul>
                             </div>
-                            <div class="space"></div>
+                            </div>
                         </div>
-                                                <div class="col-md-1"></div>
-                        <div class="col-md-5 story card">
-                            <div>
+                        <div class="col-md-5">
+                            <div class="panel">
+                            <div class="panel-heading">
                                 <img class="headshot" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/10400290_550423360045_2957_n.jpg?oh=a5270a5bb0f17f7426b97fd9060b4929&oe=55644094&__gda__=1431963813_46a18bc0daa344347fa7a259a7f86de0" alt="">
                                 <div class="space"></div>
-                            </div>
-                            <div>
                                 <h2>The Real Version</h2>
                             </div>
-                            <div>
+                            <div class="panel-body">
                                 <p>I told my family that I was planning on proposing about 9-10 months before actually doing so. At the time, I had no idea how I'd actually go about asking Lauren to marry me, however it was very important that the proposal be reflective of Lauren & my personalities.</p>
                                 <p>After 8 months of pondering, a plan started to fall into place: I was going to orchestrate a scavenger hunt for Lauren that would take her all around the city revisiting places that were meaningful to us. Of course, I'd meet her at the end of the scavenger hunt and ask the big question.</p>
                                 <p>As the plan evolved (and the big day neared), the details took on a life of their own. In order to throw Lauren off the scent, we planned the world's worst surprise birthday party for her the day before the proposal. For the proposal itself, I had enlisted the help of my friends to build a fully functional web app for a fake scavenger hunt company called <a href="www.lyfehunt.com">LyfeHunt</a>. We told Lauren that the company was a friend's start-up who we were going to help with beta-testing (this was our cover for any bugs in the app). We broke up into teams (boys vs girls) and set out on the hunt. However, the guys immediately returned to our house to help get all of the decorations in place.</p>
                                 <p>Three hours later, Lauren returned to a house transformed. We had laid out a candle-lined red carpet running through the house to the now fairytale-like backyard. We had taken a page out of the Disney playbook - hanging hundreds of lights to turn the backyard into a completely magical place.</p>
                                 <p>As Lauren walked outside, huge smile on her face, she shouted "Yes!" before I even had a chance to pop the question. Ultimately, I got down on one knee with the custom Lego ring-box I had made (complete with Star Wars wedding scene), and asked Lauren to spend the rest of her life with me.</p>
                             </div>
-                            <div class="space"></div>
+                                </div>
                         </div>
                     </div>
                     <div class="row">
@@ -587,8 +583,8 @@
                             <h3 class="media-heading">Accommodations</h3>
                             <blockquote>
                                 <p>
+                                    <img src="http://logonoid.com/images/four-seasons-logo.png">
                                     <ul class="list-unstyled">
-                                        <img src="http://logonoid.com/images/four-seasons-logo.png">
                                         <li>Four Seasons Hotel, Westlake Village</li>
                                         <li>Other Hotel Choice</li>
                                     </ul>

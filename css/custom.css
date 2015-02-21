@@ -1,3 +1,27 @@
+body{
+  /*font-family: 'Neucha', cursive;*/
+  background-color: lightgray;
+}
+
+.section{
+    background-color: lightgray;
+}
+
+.panel-heading{
+    text-align: center;
+}
+
+#custom-nav {
+    -webkit-box-shadow: 0px 5px 10px gray;
+    -moz-box-shadow:    0px 5px 10px gray;
+    box-shadow:         0px 5px 10px gray;
+    z-index:999;
+}
+
+.panel-body{
+    text-align: justify;
+}
+
 .overlay-container{
   border-radius: 5px 5px 0 0;
 }
@@ -20,13 +44,14 @@
 
 }
 
-.story{
+#story{
 /*  border: solid black 5px;
   border-radius: 5%;
   padding: 3%;*/
 /*  float: none;
   display: table-cell;
   vertical-align: top;*/
+    background-color: white;
 
 }
 
@@ -104,11 +129,6 @@
   margin: 2em;
 }
 
-body{
-  /*font-family: 'Neucha', cursive;*/
-  background-color: gray;
-}
-
 .infographic{
     text-align: center;
 }
@@ -122,8 +142,7 @@ body{
 }
 
 .card{
-  border: 3px solid black;
   padding: 10px;
   text-align: justify;
-
+  background-color: white;
 }
