@@ -133,6 +133,10 @@ body{
     text-align: center;
 }
 
+.infographic > img{
+    max-width: 750px;
+}
+
 .info{
     font-size: 80%;
 }
