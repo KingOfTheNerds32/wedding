@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'SweetPea';
-  src: url('/resources/Sweet_Pea_2.ttf'); /* IE9 Compat Modes */
-  src: url('/resources//Sweet_Pea_2.ttf') format('truetype'), /* IE6-IE8 */
+  src: url('/fonts/Sweet_Pea_2.ttf'); /* IE9 Compat Modes */
+  src: url('/fonts/Sweet_Pea_2.ttf') format('truetype'), /* IE6-IE8 */
 }
 
 body{
