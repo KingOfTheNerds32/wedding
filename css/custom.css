@@ -115,3 +115,7 @@ body{
 .info{
     font-size: 80%;
 }
+
+.register_logo{
+  max-height: 100px;
+}
