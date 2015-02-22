@@ -51,14 +51,14 @@ var main = function(){
   //   controller.addTween($this, TweenMax.from)
   // })
 
-  $(".time-left").each(function(){
-    $this = $(this);
-    controller.addTween($this , TweenMax.from( $this, 1, {css: {left:x_pos}, clearProps:"left", ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-  });
-  $(".time-right").each(function(){
-    $this = $(this);
-    controller.addTween($this , TweenMax.from( $this, 1, {css: {left:x_pos}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-  });
+  // $(".time-left").each(function(){
+  //   $this = $(this);
+  //   controller.addTween($this , TweenMax.from( $this, 1, {css: {left:x_pos}, clearProps:"left", ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+  // });
+  // $(".time-right").each(function(){
+  //   $this = $(this);
+  //   controller.addTween($this , TweenMax.from( $this, 1, {css: {left:x_pos}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+  // });
 
   var info_counter = 0;
   $(".infographic").each(function () {
