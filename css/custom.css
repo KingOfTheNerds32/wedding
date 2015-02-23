@@ -60,7 +60,6 @@ a:hover{
   color: #ff0099;
 }
 
-
 .text .val{
   font-size: 14pt;
   vertical-align: middle;
@@ -200,10 +199,23 @@ a:hover{
 
     .card{
       padding: 10px;
+      padding-top: 30px;
       background-color: white;
       -webkit-box-shadow: 0px 5px 10px gray;
       -moz-box-shadow:    0px 5px 10px gray;
       box-shadow:         0px 5px 10px gray;
+    }
+
+    .card-title{
+      margin-left: -20px;
+      margin-right: -20px;
+      max-height: 80px;
+      color: #ff0099;
+      font-family: MoonFlowerBold;
+      font-size: 60px;
+      background-color: #0f0261;
+      border-radius: 5px;
+      padding: 0px;
     }
 
     .story{
@@ -221,17 +233,17 @@ a:hover{
 
 
     .google-maps {
-        position: relative;
-        padding-bottom: 50%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
+      position: relative;
+      padding-bottom: 50%; // This is the aspect ratio
+      height: 0;
+      overflow: hidden;
     }
     .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
     }
 
 

@@ -84,6 +84,11 @@ var main = function(){
       info_counter++;
   });
 
+  $(".section-title").each(function(){
+    $this = $(this);
+      controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+  })
+
   // controller.addTween("#proposal", TweenMax.from( $("#proposal"), .5, {css: {opacity: 0}}), scrollDuration);
 
   // controller.addTween("#cd-timeline", TweenMax.from( $('#cd-timeline'), .5, {css:{opacity: 0}}), scrollDuration);
@@ -104,6 +109,7 @@ var main = function(){
   $('#test').fitText(1, { maxFontSize: '40px' });
   $('.section-title').fitText();
   $('.section-subtitle').fitText(1, { maxFontSize: '30px' });
+    $('.card-title').fitText(1, { maxFontSize: '60px' });
 
 };
 
