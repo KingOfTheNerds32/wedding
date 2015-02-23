@@ -52,6 +52,14 @@ body{
   font-size: 30px;
 }
 
+a{
+  color: #ff0099;
+}
+
+a:hover{
+  color: #ff0099;
+}
+
 
 .text .val{
   font-size: 14pt;
@@ -214,7 +222,7 @@ body{
 
     .google-maps {
         position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
+        padding-bottom: 50%; // This is the aspect ratio
         height: 0;
         overflow: hidden;
     }
