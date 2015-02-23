@@ -100,7 +100,10 @@ var main = function(){
   // controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), .25, {css:{opacity:0, fontSize:'20px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, fontSize:'240px'}, ease:Quad.easeInOut}), scrollDuration);
   // controller.addTween('#smush-it', TweenMax.fromTo( $('#smush-it'), .25, {css:{opacity:0, 'letter-spacing':'30px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, 'letter-spacing':'-10px'}, ease:Quad.easeInOut}), scrollDuration); // 100 px offset for better timing
 
-
+  $('#name_header').fitText();
+  $('#test').fitText(1, { maxFontSize: '40px' });
+  $('.section-title').fitText();
+  $('.section-subtitle').fitText(1, { maxFontSize: '30px' });
 
 };
 
