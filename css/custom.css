@@ -216,13 +216,16 @@ a:hover{
       background-color: #0f0261;
       border-radius: 5px;
       padding: 0px;
+      -webkit-box-shadow: 0px 5px 10px gray;
+      -moz-box-shadow:    0px 5px 10px gray;
+      box-shadow:         0px 5px 10px gray;
     }
 
     .story{
       text-align: justify;
     }
 
-    .info_card > .panel-body{
+    .card > .panel-body{
       text-align: center;
     }
 
