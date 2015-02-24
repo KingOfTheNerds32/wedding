@@ -194,7 +194,7 @@ a:hover{
     }
 
     .register_logo{
-      max-height: 100px;
+      max-height: 75px;
     }
 
     .card{
@@ -249,6 +249,15 @@ a:hover{
       height: 100% !important;
     }
 
+
+/*.row-same-height{
+  display: table;
+  width: 100%;
+}
+.col-same-height{
+  display: table-cell;
+  float: none !important;
+}*/
 
 
     /* -------- FONTS ------------*/
