@@ -42,13 +42,13 @@ body{
 
 .section-title{
   color: #0f0261;
-  font-family: SweetPea;
+  font-family: MoonFlowerBold;
   font-size: 80px;
 }
 
 .section-subtitle{
   color: #0f0261;
-  font-family: MoonFlowerBold;
+  font-family: SweetPea;
   font-size: 30px;
 }
 
@@ -232,6 +232,26 @@ a:hover{
     .party-filters > li{
       background-color: white;
     }
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills > li > a:hover{
+      background-color: #ff0099;
+      border-color: #ff0099;
+      color: #0f0261;
+    }
+
+    .nav-pills > li > a {
+      color: #0f0261;
+    }
+
+    .bridesmaid .overlay{
+      background-color: rgba(255, 0, 153, .7);
+    }
+    .groomsmen .overlay{
+      background-color: rgba(15, 2, 97, .7);
+    }
+
+/*    .isotope-item .btn-block{
+      color:yellow;
+    }*/
 
 
 
