@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="css/clock.css">
 
     <!-- Gallery -->
-    <link rel="stylesheet" href="gallery/css/blueimp-gallery.css">
-
+<!--     <link rel="stylesheet" href="gallery/css/blueimp-gallery.css">
+ -->
+    <link rel="stylesheet" type ="text/css" href="gallery/css/camera.css">
 
     <!-- timeline -->
     <!-- 	<link rel="stylesheet" href="vertical-timeline/css/reset.css"> -->
@@ -265,6 +266,7 @@
         <div id="photos" class="container object-non-visible" data-animation-effect="fadeIn">
             <div class="row">
                 <p class="title text-center section-title">Photos</p>
+                <p class="title text-center section-subtitle">Our Photos</p>
                 <div id="links" class="links">
                     <a href="https://farm8.static.flickr.com/7339/15768075163_cddfa9b9ab_b.jpg" title="Morning at Millabedda, Hopton, Badulla." class="img-thumbnail" data-gallery="">
                         <img src="https://farm8.static.flickr.com/7339/15768075163_cddfa9b9ab_s.jpg">
@@ -290,7 +292,15 @@
                     <ol class="indicator"></ol>
                 </div>
             </div>
+            <div class="camera_wrap" id="gallery">
+    <div data-src="/gallery/images/slides/leaf.jpg"></div>
+        <div data-src="/gallery/images/slides/bridge.jpg"></div>
+
+</div>
+        <p class="title text-center section-subtitle">Your Photos</p>
+        <div id="instafeed"></div>
         </div>
+
     </div>
     <!-- section end -->
     <!-- section start -->
@@ -1248,9 +1258,11 @@
     <script type="text/javascript" src="js/kinetic.js"></script>
     <script type="text/javascript" src="js/jquery.final-countdown.js"></script>
     <script type="text/javascript" src="js/jquery.fittext.js"></script>
+    <script type="text/javascript" src="js/instafeed.js"></script>
 
     <!-- Gallery -->
-    <script type="text/javascript" src="gallery/js/blueimp-gallery.min.js"></script>
+    <!--<script type="text/javascript" src="gallery/js/blueimp-gallery.min.js"></script>-->
+    <script type="text/javascript" src="gallery/scripts/camera.js"></script>
 
     <script type="text/javascript" src="superscrollorama/js/greensock/TweenMax.min.js"></script>
     <script src="superscrollorama/js/jquery.superscrollorama.js"></script>
