@@ -249,9 +249,19 @@ a:hover{
       background-color: rgba(15, 2, 97, .7);
     }
 
-/*    .isotope-item .btn-block{
-      color:yellow;
-    }*/
+    .isotope-item .btn-block{
+      color:#0f0261;
+    }
+
+    .groomsmen .btn-block:hover{
+      background-color: #0f0261;
+      border-color: #0f0261;
+    }
+
+    .bridesmaid .btn-block:hover{
+      background-color: #ff0099;
+      border-color: #ff0099;
+    }
 
 
 
