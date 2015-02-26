@@ -40,7 +40,7 @@
     <!-- Gallery -->
 <!--     <link rel="stylesheet" href="gallery/css/blueimp-gallery.css">
  -->
-    <link rel="stylesheet" type ="text/css" href="gallery/css/camera.css">
+    <link rel="stylesheet" type ="text/css" href="gallery/flexslider.css">
 
     <!-- timeline -->
     <!-- 	<link rel="stylesheet" href="vertical-timeline/css/reset.css"> -->
@@ -267,7 +267,7 @@
             <div class="row">
                 <p class="title text-center section-title">Photos</p>
                 <p class="title text-center section-subtitle">Our Photos</p>
-                <div id="links" class="links">
+<!--                 <div id="links" class="links">
                     <a href="https://farm8.static.flickr.com/7339/15768075163_cddfa9b9ab_b.jpg" title="Morning at Millabedda, Hopton, Badulla." class="img-thumbnail" data-gallery="">
                         <img src="https://farm8.static.flickr.com/7339/15768075163_cddfa9b9ab_s.jpg">
                     </a>
@@ -280,9 +280,9 @@
                     <a href="https://farm9.static.flickr.com/8634/16201026977_470748426d_b.jpg" title="Balloons over Bagan" class="img-thumbnail" data-gallery="">
                         <img src="https://farm9.static.flickr.com/8634/16201026977_470748426d_s.jpg">
                     </a>
-                </div>
+                </div> -->
 
-                <div id="blueimp-gallery" class="blueimp-gallery">
+<!--                 <div id="blueimp-gallery" class="blueimp-gallery">
                     <div class="slides"></div>
                     <h3 class="title"></h3>
                     <a class="prev">‹</a>
@@ -290,13 +290,68 @@
                     <a class="close">×</a>
                     <a class="play-pause"></a>
                     <ol class="indicator"></ol>
-                </div>
-            </div>
-            <div class="camera_wrap" id="gallery">
-    <div data-src="/gallery/images/slides/leaf.jpg"></div>
-        <div data-src="/gallery/images/slides/bridge.jpg"></div>
+                </div> -->
 
+                <div id="slider" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="http://lorempixel.com/500/299" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/302" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/300" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/301" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/299" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/302" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/300" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/301" />
+    </li>
+    <!-- items mirrored twice, total of 12 -->
+  </ul>
 </div>
+<div id="carousel" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="http://lorempixel.com/500/299" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/302" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/300" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/301" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/299" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/302" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/300" />
+    </li>
+    <li>
+      <img src="http://lorempixel.com/500/301" />
+    </li>
+  </ul>
+</div>
+            </div>
+
+
         <p class="title text-center section-subtitle">Your Photos</p>
         <div id="instafeed"></div>
         </div>
@@ -1262,7 +1317,7 @@
 
     <!-- Gallery -->
     <!--<script type="text/javascript" src="gallery/js/blueimp-gallery.min.js"></script>-->
-    <script type="text/javascript" src="gallery/scripts/camera.js"></script>
+    <script type="text/javascript" src="gallery/jquery.flexslider.js"></script>
 
     <script type="text/javascript" src="superscrollorama/js/greensock/TweenMax.min.js"></script>
     <script src="superscrollorama/js/jquery.superscrollorama.js"></script>

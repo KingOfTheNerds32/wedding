@@ -25,17 +25,35 @@ if ($('.countdown').length){
  });
 }
 
-document.getElementById('links').onclick = function (event) {
-  event = event || window.event;
-  var target = event.target || event.srcElement,
-  link = target.src ? target.parentNode : target,
-  options = {
-    index: link, 
-    event: event
-  },
-  links = this.getElementsByTagName('a');
-  blueimp.Gallery(links, options);
-};
+// document.getElementById('links').onclick = function (event) {
+//   event = event || window.event;
+//   var target = event.target || event.srcElement,
+//   link = target.src ? target.parentNode : target,
+//   options = {
+//     index: link, 
+//     event: event
+//   },
+//   links = this.getElementsByTagName('a');
+//   blueimp.Gallery(links, options);
+// };
+
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
 
 //$( "#story" ).load( "timeline_new.html");
 
@@ -101,7 +119,6 @@ document.getElementById('links').onclick = function (event) {
     //     limit: 3
     // });
     // feed.run();
-    jQuery("#gallery").camera();
 
     var feed = new Instafeed({
   clientId: 'a415febb075e4f78a8db95973981df84',
