@@ -16,12 +16,14 @@ var main = function(){
   //  countdown: true
   //});
 
+  if ($('.countdown').length){
    $('.countdown').final_countdown({
        'start': 1362139200,
        'end': date,
 
        'now': now
    });
+ }
 
    document.getElementById('links').onclick = function (event) {
     event = event || window.event;
@@ -44,21 +46,6 @@ var main = function(){
   // amount of scrolling over which the tween takes place (in pixels)
   var scrollDuration = 0; 
   var x_pos = $(window).width()*2;
-  //console.log(x_pos);
-  // individual element tween examples
-
-  // $(".timeline-row").each(function(){
-  //   controller.addTween($this, TweenMax.from)
-  // })
-
-  // $(".time-left").each(function(){
-  //   $this = $(this);
-  //   controller.addTween($this , TweenMax.from( $this, 1, {css: {left:x_pos}, clearProps:"left", ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-  // });
-  // $(".time-right").each(function(){
-  //   $this = $(this);
-  //   controller.addTween($this , TweenMax.from( $this, 1, {css: {left:x_pos}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-  // });
 
   var info_counter = 0;
   $(".infographic").each(function () {
@@ -74,7 +61,7 @@ var main = function(){
           default:
               entry = 0;
       };
-      console.log(entry);
+      // console.log(entry);
       if (entry == 0) {
           controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
       }
@@ -104,13 +91,17 @@ var main = function(){
   // controller.addTween('#spin-it', TweenMax.from( $('#spin-it'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}), scrollDuration);
   // controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), .25, {css:{opacity:0, fontSize:'20px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, fontSize:'240px'}, ease:Quad.easeInOut}), scrollDuration);
   // controller.addTween('#smush-it', TweenMax.fromTo( $('#smush-it'), .25, {css:{opacity:0, 'letter-spacing':'30px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, 'letter-spacing':'-10px'}, ease:Quad.easeInOut}), scrollDuration); // 100 px offset for better timing
+  resizer();
+}
+};
 
+var resizer = function(){
   $('#name_header').fitText();
-  $('#test').fitText(1, { maxFontSize: '40px' });
+  $('#top_info_1').fitText(1, { maxFontSize: '40px' });
+  $('#top_info_2').fitText(1, { maxFontSize: '40px' });
   $('.section-title').fitText();
   $('.section-subtitle').fitText(1, { maxFontSize: '30px' });
-    $('.card-title').fitText(1, { maxFontSize: '60px' });
-
+  $('.card-title').fitText(1, { maxFontSize: '60px' });
 };
 
 $(document).ready(main);

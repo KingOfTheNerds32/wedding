@@ -300,8 +300,8 @@ a:hover{
 
     @font-face {
       font-family: 'MoonFlowerBold';
-      src: url('/fonts/Moon Flower Bold.tff'); /* IE9 Compat Modes */
-      src: url('/fonts/Moon Flower Bold.tff') format('truetype'), /* IE6-IE8 */
+      src: url('/fonts/Moon Flower Bold.ttf'); /* IE9 Compat Modes */
+      src: url('/fonts/Moon Flower Bold.ttf') format('truetype'), /* IE6-IE8 */
     }
 
     @font-face {
