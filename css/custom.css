@@ -369,6 +369,12 @@ a:hover{
 }
 
 
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+
 /*.row-same-height{
   display: table;
   width: 100%;
