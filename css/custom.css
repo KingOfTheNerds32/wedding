@@ -351,28 +351,28 @@ a:hover{
 
 
 
-.divider-inside-bottom {
-  position:relative;
-  overflow:hidden; 
-  border-bottom:1px solid #ddd; 
-}
-.divider-inside-bottom:before {
-  content: ""; 
-  position:absolute; 
-  z-index: 1; 
-  width:96%;  
-  bottom: -10px; 
-  height: 10px; 
-  left: 2%; 
-  border-radius: 100px / 5px; 
-  box-shadow:0 0 18px rgba(0,0,0,0.6); 
-}
+    .divider-inside-bottom {
+      position:relative;
+      overflow:hidden; 
+      border-bottom:1px solid #ddd; 
+    }
+    .divider-inside-bottom:before {
+      content: ""; 
+      position:absolute; 
+      z-index: 1; 
+      width:96%;  
+      bottom: -10px; 
+      height: 10px; 
+      left: 2%; 
+      border-radius: 100px / 5px; 
+      box-shadow:0 0 18px rgba(0,0,0,0.6); 
+    }
 
 
-.col-centered{
-float: none;
-margin: 0 auto;
-}
+    .col-centered{
+      float: none;
+      margin: 0 auto;
+    }
 
 
 /*.row-same-height{
