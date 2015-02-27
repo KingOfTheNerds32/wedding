@@ -41,7 +41,7 @@ if ($('.countdown').length){
     animation: "slide",
     controlNav: false,
     animationLoop: false,
-    slideshow: false,
+    slideshow: true,
     itemWidth: 210,
     itemMargin: 5,
     asNavFor: '#slider'
@@ -51,7 +51,7 @@ if ($('.countdown').length){
     animation: "slide",
     controlNav: false,
     animationLoop: false,
-    slideshow: false,
+    slideshow: true,
     sync: "#carousel"
   });
 

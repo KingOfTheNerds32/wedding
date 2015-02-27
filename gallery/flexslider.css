@@ -13,12 +13,14 @@
  * FONT-FACE
  * ====================================================================================================================*/
 @font-face {
-  font-family: 'flexslider-icon';
-  src: url('/gallery/fonts/flexslider-icon.eot');
-  src: url('/gallery/fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+font-family: 'flexslider-icon';
+src:url('/gallery/fonts/flexslider-icon.eot');
+src:url('/gallery/fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+    url('/gallery/fonts/flexslider-icon.woff') format('woff'),
+    url('/gallery/fonts/flexslider-icon.ttf') format('truetype'),
+    url('/gallery/fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+font-weight: normal;
+font-style: normal}
 /* ====================================================================================================================
  * RESETS
  * ====================================================================================================================*/
@@ -111,7 +113,7 @@ html[xmlns] .flexslider .slides {
   text-decoration: none;
   display: block;
   width: 40px;
-  height: 40px;
+  /*height: 40px;*/
   margin: -20px 0 0;
   position: absolute;
   top: 50%;
