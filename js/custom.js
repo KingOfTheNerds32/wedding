@@ -120,10 +120,12 @@ if ($('.countdown').length){
     // });
     // feed.run();
 
-    var feed = new Instafeed({
+  var feed = new Instafeed({
   clientId: 'a415febb075e4f78a8db95973981df84',
   limit: 20,
   sortBy: 'most-liked',
+  get: 'tagged',
+  tagName: 'test',
   after: function () {
     var images = $("#instafeed").find('a');
     $.each(images, function(index, image) {
