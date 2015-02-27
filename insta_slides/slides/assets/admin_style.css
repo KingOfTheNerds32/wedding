@@ -1,0 +1,36 @@
+body{
+    margin: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+figure
+{
+    margin: 0;
+    padding: 0;
+}
+
+.actions{
+    margin-bottom: 30px;
+}
+
+.actions a {
+    display: block;
+    text-align: center;
+    font-size: 54px;
+}
+
+.image{
+    width: 100%;
+}
+
+.more{
+    font-size: 54px;
+}
