@@ -254,6 +254,16 @@ html[xmlns] .flexslider .slides {
   opacity: 1;
   cursor: default;
 }
+
+#carousel .slides > li{
+  margin: 5px;
+}
+#carousel .flex-active-slide{
+  background-color: black;
+}
+/*.flex-active-slide{
+  border-radius: 20%;
+}*/
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
