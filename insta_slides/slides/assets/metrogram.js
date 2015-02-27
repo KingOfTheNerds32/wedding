@@ -83,7 +83,7 @@ var metrogram = angular.module(
             var finalFetchProcessing = function(){
                 delete $scope.loadingClass;
 
-                removeExcludedImages();
+                //removeExcludedImages();
 
                 $scope.images = results;
 
@@ -118,7 +118,7 @@ var metrogram = angular.module(
 
             var generateApiUrl = function(tag, minId, maxId)
             {
-                var result = 'https://api.instagram.com/v1/tags/' + tag + '/media/recent?access_token=563091722.1fb234f.bfc78b26a5bf4684abb123d81201cdd9&callback=JSON_CALLBACK';
+                var result = 'https://api.instagram.com/v1/tags/' + tag + '/media/recent?client_id=24c7e1cf64af48318374f44ffb2decbc&callback=JSON_CALLBACK';
 
                 if (maxId > 0){
                     result += '&max_id=' + maxId;
