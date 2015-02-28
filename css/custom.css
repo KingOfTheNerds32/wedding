@@ -259,7 +259,7 @@ a:hover{
       color: #0f0261;
     }
 
-    .groomsmen .overlay{
+    .groomsmen .overlay, .other .overlay{
       background-color: rgba(255, 0, 153, .7);
     }
     .bridesmaid .overlay{
@@ -275,7 +275,7 @@ a:hover{
       border-color: #0f0261;
     }
 
-    .groomsmen .btn-block:hover{
+    .groomsmen .btn-block:hover, .other .btn-block:hover{
       background-color: #ff0099;
       border-color: #ff0099;
     }
