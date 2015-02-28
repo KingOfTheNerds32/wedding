@@ -65,33 +65,65 @@ if ($('.countdown').length){
   var scrollDuration = 0; 
   var x_pos = $(window).width()*2;
 
+  var LeftRightScrollBuilder = function(className){
   var info_counter = 0;
-  $(".infographic").each(function () {
+  $(className).each(function(){
     $this = $(this);
     var entry = 0;
-    switch (info_counter % 3) {
+    switch (info_counter % 3){
       case 0:
-      entry = x_pos;
-      break;
-      case 1:
-      entry = x_pos * -1;
-      break;
+        entry = x_pos * -1;
+        break;
+      case 1: 
+        entry = x_pos * 1;
+        break;
       default:
-      entry = 0;
-    };
-      // console.log(entry);
-      if (entry == 0) {
-        controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-      }
-      else {
-        controller.addTween($this, TweenMax.from( $this, 1, { css: { left: entry }, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-      }
-      info_counter++;
-    });
+        entry = 0;
+    }
+    if (entry == 0) {
+      controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+    }
+    else {
+      controller.addTween($this, TweenMax.from( $this, 1, { css: { left: entry }, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+    }
+    info_counter++;
+  })
+};
+
+  LeftRightScrollBuilder(".infographic");
+  LeftRightScrollBuilder(".story-cards");
+  // var info_counter = 0;
+  // $(".infographic").each(function () {
+  //   $this = $(this);
+  //   var entry = 0;
+  //   switch (info_counter % 3) {
+  //     case 0:
+  //     entry = x_pos;
+  //     break;
+  //     case 1:
+  //     entry = x_pos * -1;
+  //     break;
+  //     default:
+  //     entry = 0;
+  //   };
+  //     // console.log(entry);
+  //     if (entry == 0) {
+  //       controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+  //     }
+  //     else {
+  //       controller.addTween($this, TweenMax.from( $this, 1, { css: { left: entry }, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+  //     }
+  //     info_counter++;
+  //   });
 
   $(".section-title").each(function(){
     $this = $(this);
     controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+  })
+
+  $(".story").each(function(){
+    $this = $(this);
+    var entry = 0;
   })
 
   // controller.addTween("#proposal", TweenMax.from( $("#proposal"), .5, {css: {opacity: 0}}), scrollDuration);
