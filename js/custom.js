@@ -103,11 +103,11 @@ var TweenAppear = function(obj){
 
   LeftRightScrollBuilder($(".infographic"));
   LeftRightScrollBuilder($(".story-cards"));
-  LeftRightScrollBuilder($(".info-card"));
+  // LeftRightScrollBuilder($(".info-card"));
   var slow_factor = .6;
-  TweenFromSide($("#accommodations-left"), (x_pos * -1 * slow_factor));
-  TweenFromSide($("#accommodations-right"), (x_pos * slow_factor));
-  TweenAppear($("#accommodations-center"));
+  // TweenFromSide($("#accommodations-left"), (x_pos * -1 * slow_factor));
+  // TweenFromSide($("#accommodations-right"), (x_pos * slow_factor));
+  // TweenAppear($("#accommodations-center"));
 
 
   $(".section-title").each(function(){
