@@ -37,23 +37,23 @@ if ($('.countdown').length){
 //   blueimp.Gallery(links, options);
 // };
 
-  $('#carousel').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: true,
-    itemWidth: 210,
-    itemMargin: 5,
-    asNavFor: '#slider'
-  });
- 
-  $('#slider').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: true,
-    sync: "#carousel"
-  });
+$('#carousel').flexslider({
+  animation: "slide",
+  controlNav: false,
+  animationLoop: false,
+  slideshow: true,
+  itemWidth: 210,
+  itemMargin: 5,
+  asNavFor: '#slider'
+});
+
+$('#slider').flexslider({
+  animation: "slide",
+  controlNav: false,
+  animationLoop: false,
+  slideshow: true,
+  sync: "#carousel"
+});
 
 //$( "#story" ).load( "timeline_new.html");
 
@@ -66,21 +66,21 @@ if ($('.countdown').length){
   var x_pos = $(window).width()*2;
 
   var LeftRightScrollBuilder = function(selectorObj){
-  var info_counter = 0;
-  selectorObj.each(function(){
-    $this = $(this);
-    var entry = 0;
-    switch (info_counter % 3){
-      case 0:
+    var info_counter = 0;
+    selectorObj.each(function(){
+      $this = $(this);
+      var entry = 0;
+      switch (info_counter % 3){
+        case 0:
         entry = x_pos * -1;
         break;
-      case 1: 
+        case 1: 
         entry = x_pos * 1;
         break;
-      default:
+        default:
         entry = 0;
-    }
-    if (entry == 0) {
+      }
+      if (entry == 0) {
       // controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
       TweenAppear($this);
     }
@@ -90,16 +90,16 @@ if ($('.countdown').length){
     }
     info_counter++;
   })
-};
+  };
 
-var TweenFromSide = function(obj, entry){
-  $this = obj;
-  controller.addTween($this, TweenMax.from( $this, 1, { css: { left: entry }, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-};
-var TweenAppear = function(obj){
-  $this = obj;
-  controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-};
+  var TweenFromSide = function(obj, entry){
+    $this = obj;
+    controller.addTween($this, TweenMax.from( $this, 1, { css: { left: entry }, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+  };
+  var TweenAppear = function(obj){
+    $this = obj;
+    controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+  };
 
   LeftRightScrollBuilder($(".infographic"));
   LeftRightScrollBuilder($(".story-cards"));
@@ -146,37 +146,59 @@ var TweenAppear = function(obj){
     // });
     // feed.run();
 
-  var feed = new Instafeed({
-  clientId: 'a415febb075e4f78a8db95973981df84',
-  limit: 20,
-  sortBy: 'most-liked',
-  get: 'tagged',
-  tagName: 'test',
-  after: function () {
-    var images = $("#instafeed").find('a');
-    $.each(images, function(index, image) {
-      var delay = (index * 75) + 'ms';
-      $(image).css('-webkit-animation-delay', delay);
-      $(image).css('-moz-animation-delay', delay);
-      $(image).css('-ms-animation-delay', delay);
-      $(image).css('-o-animation-delay', delay);
-      $(image).css('animation-delay', delay);
-      $(image).addClass('animated flipInX');
+    var feed = new Instafeed({
+      clientId: 'a415febb075e4f78a8db95973981df84',
+      limit: 20,
+      sortBy: 'most-liked',
+      get: 'tagged',
+      tagName: 'test',
+      after: function () {
+        var images = $("#instafeed").find('a');
+        $.each(images, function(index, image) {
+          var delay = (index * 75) + 'ms';
+          $(image).css('-webkit-animation-delay', delay);
+          $(image).css('-moz-animation-delay', delay);
+          $(image).css('-ms-animation-delay', delay);
+          $(image).css('-o-animation-delay', delay);
+          $(image).css('animation-delay', delay);
+          $(image).addClass('animated flipInX');
+        });
+      },
+      template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
     });
-  },
-  template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
-});
-feed.run();
+    feed.run();
 
-};
+    var wedding_party = [
+    {
+      Name:"Adrienne"
+      ,Img:"https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/206640_10150562660110302_7845927_n.jpg?oh=089f146a132f1f5ec2831b034f1aec3d&oe=5594D67D&__gda__=1434720940_960a8e5d935025c480f6c30bcdbae2e4"
+      ,Hover:"Maid of Honor"
+      ,Type:"bridesmaid"
+      ,Title:"Lauren\'s Sister"
+      ,Description:"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p><p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.</p>"
+    }
+    ,{
+      
+    }
+    ];
+    var html_builder = '';
+    console.log(wedding_party);
+    for (var i = 0; i < wedding_party.length; i++){
+      Person = wedding_party[i];
+      html_builder += '<div class="col-xs-6 col-sm-6 col-md-3 isotope-item ' + Person.Type + '"><div class="image-box"><div class="overlay-container"><img src="' + Person.Img + '" alt="' + Person.Name + '"><a class="overlay" data-toggle="modal" data-target="#project-1"><i class="fa fa-search-plus"></i><span>' + Person.Hover + '</span></a></div><a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">' + Person.Name + '</a></div><!-- Modal --><div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="project-1-label">' + Person.Title + '</h4></div><div class="modal-body"><h3>'+Person.Name+'</h3><div class="row"><div class="col-md-6">'+Person.Description+'</div><div class="col-md-6"><img src="' + Person.Img + '" alt="' + Person.Name + '"></div></div></div><div class="modal-footer"><button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button></div></div></div></div><!-- Modal end --></div>';
+    };
 
-var resizer = function(){
-  $('#name_header').fitText();
-  $('#top_info_1').fitText(1, { maxFontSize: '40px' });
-  $('#top_info_2').fitText(1, { maxFontSize: '40px' });
-  $('.section-title').fitText();
-  $('.section-subtitle').fitText(1, { maxFontSize: '30px' });
-  $('.card-title').fitText(1, { maxFontSize: '60px' });
-};
+    $('#wedding_party').html(html_builder);
 
-$(document).ready(main);
+  };
+
+  var resizer = function(){
+    $('#name_header').fitText();
+    $('#top_info_1').fitText(1, { maxFontSize: '40px' });
+    $('#top_info_2').fitText(1, { maxFontSize: '40px' });
+    $('.section-title').fitText();
+    $('.section-subtitle').fitText(1, { maxFontSize: '30px' });
+    $('.card-title').fitText(1, { maxFontSize: '60px' });
+  };
+
+  $(document).ready(main);
