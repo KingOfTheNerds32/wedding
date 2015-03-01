@@ -28,7 +28,7 @@ var main = function(){
 $('#carousel').flexslider({
   animation: "slide",
   controlNav: false,
-  animationLoop: true,
+  animationLoop: false,
   slideshow: true,
   itemWidth: 210,
   itemMargin: 5,
