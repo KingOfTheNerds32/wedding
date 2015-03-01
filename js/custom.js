@@ -270,8 +270,8 @@ $('#wedding_party').html(html_builder);
 
   //Applies text resizing to all appropriate items
   $('#name_header').fitText();
-  $('#top_info_1').fitText(1, { maxFontSize: '40px' });
-  $('#top_info_2').fitText(1, { maxFontSize: '40px' });
+  $('#top_info_1').fitText(2, { maxFontSize: '40px' });
+  $('#top_info_2').fitText(2, { maxFontSize: '40px' });
   $('.section-title').fitText();
   $('.section-subtitle').fitText(1, { maxFontSize: '30px' });
   $('.card-title').fitText(1, { maxFontSize: '60px' });
