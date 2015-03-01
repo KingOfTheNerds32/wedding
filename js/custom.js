@@ -40,7 +40,7 @@ if ($('.countdown').length){
 $('#carousel').flexslider({
   animation: "slide",
   controlNav: false,
-  animationLoop: false,
+  animationLoop: true,
   slideshow: true,
   itemWidth: 210,
   itemMargin: 5,
@@ -50,7 +50,7 @@ $('#carousel').flexslider({
 $('#slider').flexslider({
   animation: "slide",
   controlNav: false,
-  animationLoop: false,
+  animationLoop: true,
   slideshow: true,
   sync: "#carousel"
 });
