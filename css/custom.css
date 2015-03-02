@@ -32,13 +32,10 @@ body{
   background-image: url(/assets/divider.png);
   background-position: 50%;
   background-repeat: no-repeat;
-  width: auto;
+  width: 70%;
+  margin: 0 auto;
   height: 0;
-  padding-bottom: 3.3333%;
-  /*left: 0;*/
-  /*right: 0;*/
-  /*bottom: 0;*/
-  /*position: absolute;*/
+  padding-bottom: 2.5%;
 }
 
 .section-title{
@@ -186,6 +183,18 @@ a:hover{
 
 .card > .panel-body{
   text-align: center;
+}
+
+.card-bottom{
+  background-size: cover;
+  background-image: url(/assets/divider.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 80%;
+  margin: 0 auto;
+  height: 0;
+  padding-bottom: 3.3333%;
+  margin-bottom: 20px;
 }
 
 .party-filters > li{
