@@ -125,6 +125,11 @@ var feed = new Instafeed({
 });
 feed.run();
 
+//---------------------------------- WEDDING INFO ---------------------------
+
+
+resizeInfoPanels();
+
 
 // --------------------------------- WEDDING PARTY --------------------------
 var wedding_party = [
@@ -281,3 +286,32 @@ $('#wedding_party').html(html_builder);
 
 
 $(document).ready(main);
+
+var resizeInfoPanels = function(){
+  var groups = [[$("#where"), $("#when")], [$('#accommodations-left'), $('#accommodations-center'), $('#accommodations-right')]];
+  for (var i = 0; i < groups.length; i++){
+    console.log(groups[i]);
+    resetHeight(groups[i]);
+    if ($(window).width() > 991){
+      setHeight(groups[i]);
+    }
+  }
+};
+
+var setHeight = function(objArray){
+  var h = 0;
+  for (var i = 0; i < objArray.length; i++){
+    if (objArray[i].height() > h){
+      h = objArray[i].height();
+    }
+  }
+  for (var i = 0; i < objArray.length; i++){
+    objArray[i].height(h);
+  }
+}
+
+var resetHeight = function(objArray){
+  for (var i = 0; i < objArray.length; i++){
+    objArray[i].height('auto');
+  }
+}
