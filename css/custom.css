@@ -20,11 +20,25 @@
 
 body{
   font-family: Avenir Next LT Pro Demi Condensed;
-  background-color: lightgray;
+  background-color: white;
 }
 
 .section{
-  background-color: lightgray;
+  background-color: white;
+}
+
+.section-divider{
+  background-size: cover;
+  background-image: url(/assets/divider.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 0;
+  padding-bottom: 3.3333%;
+  /*left: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*position: absolute;*/
 }
 
 .section-title{
@@ -283,7 +297,7 @@ a:hover{
 
 
 
-.divider-inside-bottom {
+/*.divider-inside-bottom {
   position:relative;
   overflow:hidden; 
   border-bottom:1px solid #ddd; 
@@ -298,7 +312,7 @@ a:hover{
   left: 2%; 
   border-radius: 100px / 5px; 
   box-shadow:0 0 18px rgba(0,0,0,0.6); 
-}
+}*/
 
 
 .col-centered{
