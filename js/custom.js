@@ -285,6 +285,8 @@ $('#wedding_party').html(html_builder);
 };
 
 
+var debug = false;
+
 var resizeInfoPanels = function(){
   var groups = 
   [
@@ -297,15 +299,21 @@ var resizeInfoPanels = function(){
     if ($(window).width() > 991){
       setHeight(groups[i]);
     }
-    // checkHeight(groups[i]);
+    if (debug == true){
+      checkHeight(groups[i]);
+    }
   }
 };
 
 var setHeight = function(objArray){
   var h = 0;
-  // console.log('setting height');
+  if (debug == true) {
+    console.log('setting height')
+  };
   for (var i = 0; i < objArray.length; i++){
-    // console.log(objArray[i].attr('id') + ": " + objArray[i].height());
+    if (debug == true) {
+      console.log(objArray[i].attr('id') + ": " + objArray[i].height())
+    };
     if (objArray[i].height() > h){
       h = objArray[i].height();
     }
@@ -316,10 +324,14 @@ var setHeight = function(objArray){
 }
 
 var resetHeight = function(objArray){
-  // console.log('resetting height');
+  if (debug == true){
+    console.log('resetting height')
+  };
   for (var i = 0; i < objArray.length; i++){
     objArray[i].height('auto');
-    // console.log(objArray[i].attr('id') + ": " + objArray[i].height());    
+    if (debug == true) {
+      console.log(objArray[i].attr('id') + ": " + objArray[i].height())
+    };    
   }
 }
 
