@@ -128,7 +128,7 @@ feed.run();
 //---------------------------------- WEDDING INFO ---------------------------
 
 
-resizeInfoPanels();
+// resizeInfoPanels();
 
 
 // --------------------------------- WEDDING PARTY --------------------------
@@ -285,22 +285,27 @@ $('#wedding_party').html(html_builder);
 };
 
 
-$(document).ready(main);
-
 var resizeInfoPanels = function(){
-  var groups = [[$("#where"), $("#when")], [$('#accommodations-left'), $('#accommodations-center'), $('#accommodations-right')]];
+  var groups = 
+  [
+    [$("#where"), $("#when")]
+    ,[$('#accommodations-left'), $('#accommodations-center'), $('#accommodations-right')]
+    ,[$('#her_story'), $('#his_story')]
+  ];
   for (var i = 0; i < groups.length; i++){
-    console.log(groups[i]);
     resetHeight(groups[i]);
     if ($(window).width() > 991){
       setHeight(groups[i]);
     }
+    // checkHeight(groups[i]);
   }
 };
 
 var setHeight = function(objArray){
   var h = 0;
+  // console.log('setting height');
   for (var i = 0; i < objArray.length; i++){
+    // console.log(objArray[i].attr('id') + ": " + objArray[i].height());
     if (objArray[i].height() > h){
       h = objArray[i].height();
     }
@@ -311,7 +316,19 @@ var setHeight = function(objArray){
 }
 
 var resetHeight = function(objArray){
+  // console.log('resetting height');
   for (var i = 0; i < objArray.length; i++){
     objArray[i].height('auto');
+    // console.log(objArray[i].attr('id') + ": " + objArray[i].height());    
   }
 }
+
+var checkHeight = function(objArray){
+  for (var i = 0; i < objArray.length; i++){
+    console.log(objArray[i].attr('id') + ": " + objArray[i].height());    
+  }
+}
+
+
+$(document).ready(main);
+$(window).load(resizeInfoPanels);
