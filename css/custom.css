@@ -21,6 +21,8 @@
 body{
   font-family: Avenir Next LT Pro Demi Condensed;
   background-color: white;
+      max-width: 100%;
+    overflow-x: hidden;
 }
 
 .section{
