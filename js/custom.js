@@ -254,7 +254,7 @@ var wedding_party = [
   ,Description:"TBD"
 }
 ,{
-  Name:"Dave & Michele"
+  Name:"Leah"
   ,Img:"images/portfolio-7.jpg"
   ,Hover:"Reader"
   ,Type:"other"
