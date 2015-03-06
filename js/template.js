@@ -10,7 +10,7 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('images/banner.jpg');
+	    $(".banner-image").backstretch('http://www.pc4photo.com/photos/i-VNVL89D/0/XL/i-VNVL89D-XL.jpg');
 		
 		// Fixed header
 		//-----------------------------------------------
