@@ -344,3 +344,4 @@ var checkHeight = function(objArray){
 
 $(document).ready(main);
 $(window).load(resizeInfoPanels);
+$(window).resize(resizeInfoPanels);
