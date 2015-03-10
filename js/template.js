@@ -10,7 +10,7 @@
 (function($){
 	$(document).ready(function(){
 	
-	    $(".banner-image").backstretch('http://www.pc4photo.com/photos/i-VNVL89D/0/XL/i-VNVL89D-XL.jpg');
+	    $(".banner-image").backstretch('http://www.bandgphotography.com/wp-content/uploads/2015/03/lm01.jpg');
 		
 		// Fixed header
 		//-----------------------------------------------

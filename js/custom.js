@@ -40,6 +40,7 @@ $('#slider').flexslider({
   controlNav: false,
   animationLoop: true,
   slideshow: true,
+  smoothHeight: true,
   sync: "#carousel"
 });
 
