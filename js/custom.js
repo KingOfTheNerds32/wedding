@@ -231,7 +231,7 @@ var wedding_party = [
   ,Type:"other"
   ,Title:"Lauren\'s Pal"
   ,Description:"TBD"
-  ,Order: 110
+  ,Order: 130
 }
 ,{
   Name:"Pierson"
@@ -249,7 +249,7 @@ var wedding_party = [
   ,Type:"other"
   ,Title:"Harry\'s Wife"
   ,Description:"TBD"
-  ,Order: 130
+  ,Order: 110
 }
 ,{
   Name:"Ron"
