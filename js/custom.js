@@ -141,6 +141,7 @@ var wedding_party = [
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Sister"
   ,Description:"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p><p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.</p>"
+  ,Order: 10
 }
 ,{
   Name:"Ben"
@@ -149,6 +150,7 @@ var wedding_party = [
   ,Type:"groomsmen"
   ,Title:"Michael\'s Oldest Friend"
   ,Description:"TBD"
+  ,Order: 20
 }
 ,{
   Name:"Lauren"
@@ -157,6 +159,7 @@ var wedding_party = [
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Bestie"
   ,Description:"TBD"
+  ,Order: 30
 }
 ,{
   Name:"Harry"
@@ -165,6 +168,7 @@ var wedding_party = [
   ,Type:"groomsmen"
   ,Title:"Michael\'s College Roomate"
   ,Description:"TBD"
+  ,Order: 40
 }
 ,{
   Name:"Hannah"
@@ -173,6 +177,7 @@ var wedding_party = [
   ,Type:"bridesmaid"
   ,Title:"The Life of the Party"
   ,Description:"TBD"
+  ,Order: 50
 }
 ,{
   Name:"Dishan"
@@ -181,6 +186,7 @@ var wedding_party = [
   ,Type:"groomsmen"
   ,Title:"Michael\'s Brother From Another Mother"
   ,Description:"TBD"
+  ,Order: 60
 }
 ,{
   Name:"Gaby"
@@ -189,6 +195,7 @@ var wedding_party = [
   ,Type:"bridesmaid"
   ,Title:"Michael\'s Sister From Another Mister"
   ,Description:"TBD"
+  ,Order: 70
 }
 ,{
   Name:"Sridhar"
@@ -197,6 +204,7 @@ var wedding_party = [
   ,Type:"groomsmen"
   ,Title:"Michael\'s College Buddy"
   ,Description:"TBD"
+  ,Order: 80
 }
 ,{
   Name:"Katie"
@@ -205,6 +213,7 @@ var wedding_party = [
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Coolest Cousin"
   ,Description:"TBD"
+  ,Order: 90
 }
 ,{
   Name:"Darrin"
@@ -213,6 +222,7 @@ var wedding_party = [
   ,Type:"other"
   ,Title:"Michael\'s Buddy"
   ,Description:"TBD"
+  ,Order: 100
 }
 ,{
   Name:"Diana"
@@ -221,6 +231,7 @@ var wedding_party = [
   ,Type:"other"
   ,Title:"Lauren\'s Pal"
   ,Description:"TBD"
+  ,Order: 110
 }
 ,{
   Name:"Pierson"
@@ -229,6 +240,7 @@ var wedding_party = [
   ,Type:"other"
   ,Title:"Michael\'s Amigo"
   ,Description:"TBD"
+  ,Order: 120
 }
 ,{
   Name:"Kalina"
@@ -237,6 +249,7 @@ var wedding_party = [
   ,Type:"other"
   ,Title:"Harry\'s Wife"
   ,Description:"TBD"
+  ,Order: 130
 }
 ,{
   Name:"Ron"
@@ -245,6 +258,7 @@ var wedding_party = [
   ,Type:"other"
   ,Title:"Lauren\'s Uncle"
   ,Description:"TBD"
+  ,Order: 140
 }
 ,{
   Name:"Ursula"
@@ -253,6 +267,7 @@ var wedding_party = [
   ,Type:"other"
   ,Title:"Michael\'s Grandmother"
   ,Description:"TBD"
+  ,Order: 150
 }
 ,{
   Name:"Leah"
@@ -261,8 +276,10 @@ var wedding_party = [
   ,Type:"other"
   ,Title:"Family Friends"
   ,Description:"TBD"
+  ,Order: 160
 }  
 ];
+wedding_party = _.sortBy(wedding_party, 'Order');
 var html_builder = '';
 for (var i = 0; i < wedding_party.length; i++){
   Person = wedding_party[i];
