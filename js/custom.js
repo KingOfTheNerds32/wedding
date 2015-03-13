@@ -140,7 +140,7 @@ var wedding_party = [
   ,Hover:"Maid of Honor"
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Sister"
-  ,Description:"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p><p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.</p>"
+  ,Description:"If you looked at Lauren and Adrienne side-by-side, you probably wouldn’t be able to tell that they are sisters. Though they may look very different, both sisters share a love of art. While Lauren enjoys viewing art and dabbling in arts and crafts, Adrienne produces unique and beautiful pieces as an artist and graphic design guru. Adrienne is the wildly creative member of the family. With her as the Maid of Honor, you can rest assured that there will be no puffed sleeves, frilly bows, or otherwise ugly bridal party outfits!"
   ,Order: 10
 }
 ,{
