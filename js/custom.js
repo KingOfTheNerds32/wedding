@@ -192,7 +192,7 @@ var wedding_party = [
 }
 ,{
   Name:"Sridhar"
-  ,Img:"images/portfolio-7.jpg"
+  ,Img:"https://media.licdn.com/media/p/8/005/067/0e9/3b7e5b2.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
   ,Title:"Michael\'s College Buddy"
@@ -200,7 +200,7 @@ var wedding_party = [
 }
 ,{
   Name:"Katie"
-  ,Img:"https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/279233_417879128270457_7499262_o.jpg"
+  ,Img:"https://scontent-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10868111_818583341533365_275889682876306905_n.jpg?oh=16d8e5ff195e7e45fcda85ce310d03ad&oe=5575E29B"
   ,Hover:"Junior Bridesmaid"
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Coolest Cousin"
@@ -256,7 +256,7 @@ var wedding_party = [
 }
 ,{
   Name:"Leah"
-  ,Img:"images/portfolio-7.jpg"
+  ,Img:"https://scontent-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10647007_10203139901881538_5765877267582764654_n.jpg?oh=54dfac87f5bef8b688d068d6df7e3e0f&oe=558CEC82"
   ,Hover:"Reader"
   ,Type:"other"
   ,Title:"Family Friends"
