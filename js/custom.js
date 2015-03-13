@@ -158,7 +158,7 @@ var wedding_party = [
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Bestie"
-  ,Description:"TBD"
+  ,Description:"Lauren and Lauren met in ballet class during high school and immediately bonded over their mutual interests in musicals, sparkly things, arts & crafts, dance, and what makes people tick. Lauren and Lauren can be found in heated discussion about the most recent episode of So You Think You Can Dance, making greeting cards with way too much glitter, or giggling hysterically over…nothing really."
   ,Order: 30
 }
 ,{
@@ -176,7 +176,7 @@ var wedding_party = [
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
   ,Title:"The Life of the Party"
-  ,Description:"TBD"
+  ,Description:"Hannah has to tolerate sharing a small office with Lauren at The Guidance Center. Hannah can challenge anyone to a Disney song-singing or Friends line-quoting competition and probably win – she uses the competitive edge she honed as a collegiate athlete to go deep catalogue. Lauren can always count on Hannah to put things in perspective or insert a strategically placed corny joke. Most recently, Hannah discovered she can text message voice recordings, which has opened up a whole new world of humorous communication."
   ,Order: 50
 }
 ,{
@@ -194,7 +194,7 @@ var wedding_party = [
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
   ,Title:"Michael\'s Sister From Another Mister"
-  ,Description:"TBD"
+  ,Description:"When Lauren met Michael, she simultaneously acquired a thoughtful, smart, kind, new friend in Gaby. Gaby’s parents are best friends with Michael’s parents, and Gaby and Michael grew up together. While don’t ever get to snap a picture of Gaby (Gaby, you will be in photos on the wedding day – start preparing now), we have plenty of fun memories of this athlete, aspiring lawyer, and awesome new mommy."
   ,Order: 70
 }
 ,{
@@ -212,7 +212,7 @@ var wedding_party = [
   ,Hover:"Junior Bridesmaid"
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Coolest Cousin"
-  ,Description:"TBD"
+  ,Description:"Katie is Lauren’s favorite cousin (but shhhh! Don’t tell the other cousins!). Katie has already given her expert opinion on her dress for the wedding and is a seasoned pro at being in the bridal party. She was recently featured as the flower girl in a friend’s wedding on TV! Lauren is excited to promote Katie to Jr. Bridesmaid. Lauren and Katie tend to gravitate toward each other at family gatherings, at which time Katie likes to scare Lauren by talking about all the scary movies she watches. Even when she is recounting a blood curdling movie plot, it is easy to see that Katie smart, funny, friendly, and kind."
   ,Order: 90
 }
 ,{
