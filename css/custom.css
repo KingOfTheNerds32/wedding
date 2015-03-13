@@ -2,10 +2,13 @@
 /* -------------NAVIGATION -------------------*/
 .fixed-header-on .header {
     background-color: #0f0261;
+    z-index: 999;
+}
+
+.nav-shadow{
     -webkit-box-shadow: 0px 5px 10px gray;
     -moz-box-shadow: 0px 5px 10px gray;
     box-shadow: 0px 5px 10px gray;
-    z-index: 999;
 }
 
 .main-navigation .navbar-default .navbar-nav > li.active > a {

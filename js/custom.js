@@ -92,15 +92,6 @@ $('#slider').flexslider({
   LeftRightScrollBuilder($(".infographic"));
   LeftRightScrollBuilder($(".story-cards"));
 
-  // $(".section-title").each(function(){
-  //   $this = $(this);
-  //   controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-  // })
-
-  // $(".story").each(function(){
-  //   $this = $(this);
-  //   var entry = 0;
-  // })
 
 
 // -------------------------------- INSTAGRAM -----------------------------
@@ -363,3 +354,14 @@ var checkHeight = function(objArray){
 $(document).ready(main);
 $(window).load(resizeInfoPanels);
 $(window).resize(resizeInfoPanels);
+$(window).scroll(function(){
+  var scroll = $(window).scrollTop();
+  var nav = $('#custom-nav');
+  var nav_height = nav.height();
+  if ((scroll + nav_height) >= $("#story").position().top){
+    nav.addClass('nav-shadow');
+  }
+  else {
+    nav.removeClass('nav-shadow');
+  };
+});
