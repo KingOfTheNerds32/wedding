@@ -127,7 +127,7 @@ $('#slider').flexslider({
 var wedding_party = [
 {
   Name:"Adrienne"
-  ,Img:"https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/206640_10150562660110302_7845927_n.jpg?oh=089f146a132f1f5ec2831b034f1aec3d&oe=5594D67D&__gda__=1434720940_960a8e5d935025c480f6c30bcdbae2e4"
+  ,Img:"/assets/party/Adrienne.jpg"
   ,Hover:"Maid of Honor"
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Sister"
@@ -136,7 +136,7 @@ var wedding_party = [
 }
 ,{
   Name:"Ben"
-  ,Img:"https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash2/t31.0-8/241956_10101251654506232_1533911831_o.jpg"
+  ,Img:"/assets/party/Ben.jpg"
   ,Hover:"Best Man"
   ,Type:"groomsmen"
   ,Title:"Michael\'s Oldest Friend"
@@ -145,7 +145,7 @@ var wedding_party = [
 }
 ,{
   Name:"Lauren"
-  ,Img:"https://scontent-sjc.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10805785_10101607429330803_7746208321164114642_n.jpg?oh=278c179d7846e9482188e17ecca237eb&oe=559011A2"
+  ,Img:"/assets/party/Lauren_G.jpg"
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Bestie"
@@ -154,7 +154,7 @@ var wedding_party = [
 }
 ,{
   Name:"Harry"
-  ,Img:"https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/v/t1.0-9/579138_10101206231708815_703685165_n.jpg?oh=655a7e7139b2addf440687d6bf4fcff3&oe=55845602&__gda__=1434714749_16ac639ef3b2a8029eeb867b3c9161d6"
+  ,Img:"/assets/party/Harry.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
   ,Title:"Michael\'s College Roomate"
@@ -163,7 +163,7 @@ var wedding_party = [
 }
 ,{
   Name:"Hannah"
-  ,Img:"https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10500545_608853182086_6254427698399059966_n.jpg?oh=76b67bf93f604e2cdaae14febc1035f5&oe=55929C3E&__gda__=1431020093_5dd71210715d5ca738757eb3e99c8864"
+  ,Img:"/assets/party/Hannah.jpg"
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
   ,Title:"The Life of the Party"
@@ -172,7 +172,7 @@ var wedding_party = [
 }
 ,{
   Name:"Dishan"
-  ,Img:"https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10653421_10203658431719864_3243315797973048647_n.jpg?oh=8e60cbe1e60b6707c12dbd630bb6f825&oe=55969F7C&__gda__=1435709699_0e0c0458bbed7a6309e01f24fe66b6e8"
+  ,Img:"/assets/party/Dishan.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
   ,Title:"Michael\'s Brother From Another Mother"
@@ -190,7 +190,7 @@ var wedding_party = [
 }
 ,{
   Name:"Sridhar"
-  ,Img:"https://media.licdn.com/media/p/8/005/067/0e9/3b7e5b2.jpg"
+  ,Img:"/assets/party/sridhar.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
   ,Title:"Michael\'s College Buddy"
@@ -199,7 +199,7 @@ var wedding_party = [
 }
 ,{
   Name:"Katie"
-  ,Img:"https://scontent-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10868111_818583341533365_275889682876306905_n.jpg?oh=16d8e5ff195e7e45fcda85ce310d03ad&oe=5575E29B"
+  ,Img:"/assets/party/junior.jpg"
   ,Hover:"Junior Bridesmaid"
   ,Type:"bridesmaid"
   ,Title:"Lauren\'s Coolest Cousin"
@@ -208,7 +208,7 @@ var wedding_party = [
 }
 ,{
   Name:"Darrin"
-  ,Img:"https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/v/t1.0-9/1233635_10151728054615835_369814455_n.jpg?oh=4e5c7ee9a5abbc3dac506eeff00e7287&oe=55951D06&__gda__=1435625323_ad459c4c074c7196cc6af4b0b650ccc7"
+  ,Img:"/assets/party/Darrin.jpg"
   ,Hover:"Reader"
   ,Type:"other"
   ,Title:"Michael\'s Buddy"
@@ -217,7 +217,7 @@ var wedding_party = [
 }
 ,{
   Name:"Diana"
-  ,Img:"https://scontent-lax.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1947589_10102375937499035_6269758663935604068_n.jpg?oh=b5183f81052bf75813b4ba7d08df7164&oe=55863C3B"
+  ,Img:"/assets/party/Diana.jpg"
   ,Hover:"Reader"
   ,Type:"other"
   ,Title:"Lauren\'s Pal"
@@ -226,7 +226,7 @@ var wedding_party = [
 }
 ,{
   Name:"Pierson"
-  ,Img:"https://scontent-lax.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/395655_10100599817981785_1168786331_n.jpg?oh=fb925c66796f3165c024a3e334c3ab5e&oe=557E58DC"
+  ,Img:"/assets/party/Pierson.jpg"
   ,Hover:"Reader"
   ,Type:"other"
   ,Title:"Michael\'s Amigo"
@@ -235,7 +235,7 @@ var wedding_party = [
 }
 ,{
   Name:"Kalina"
-  ,Img:"https://scontent-lax.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1477360_10102097942817605_1015099472_n.jpg?oh=f45581a9bfa31dde4ccc2184738c9e23&oe=554AACF7"
+  ,Img:"/assets/party/Kalina.jpg"
   ,Hover:"Reader"
   ,Type:"other"
   ,Title:"Harry\'s Wife"
@@ -244,7 +244,7 @@ var wedding_party = [
 }
 ,{
   Name:"Ron"
-  ,Img:"https://scontent-lax.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1908049_337551139737126_2632047761377470505_n.jpg?oh=5d222f6b1a1ffd1b1ca057e3c40acea9&oe=5577D7DA"
+  ,Img:"/assets/party/Ron.jpg"
   ,Hover:"Reader"
   ,Type:"other"
   ,Title:"Lauren\'s Uncle"
@@ -252,17 +252,17 @@ var wedding_party = [
   ,Order: 140
 }
 ,{
-  Name:"Ursula"
-  ,Img:"images/portfolio-7.jpg"
+  Name:"Dave & Michele"
+  ,Img:"/assets/party/DaveMichele.jpg"
   ,Hover:"Reader"
   ,Type:"other"
-  ,Title:"Michael\'s Grandmother"
+  ,Title:"Famiy Friend"
   ,Description:"TBD"
   ,Order: 150
 }
 ,{
   Name:"Leah"
-  ,Img:"https://scontent-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10647007_10203139901881538_5765877267582764654_n.jpg?oh=54dfac87f5bef8b688d068d6df7e3e0f&oe=558CEC82"
+  ,Img:"/assets/party/Leah.jpg"
   ,Hover:"Reader"
   ,Type:"other"
   ,Title:"Family Friends"
