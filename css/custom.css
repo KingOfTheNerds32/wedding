@@ -355,6 +355,11 @@ a {
 }
 
 
+#hampton{
+    background-image:url('/assets/hampton_blue.png');
+}
+
+
 /* -------- FONTS ------------*/
 
 @font-face {

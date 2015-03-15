@@ -95,27 +95,27 @@ $('#slider').flexslider({
 
 
 // -------------------------------- INSTAGRAM -----------------------------
-var feed = new Instafeed({
-  clientId: 'a415febb075e4f78a8db95973981df84',
-  limit: 20,
-  sortBy: 'most-liked',
-  get: 'tagged',
-  tagName: 'test',
-  after: function () {
-    var images = $("#instafeed").find('a');
-    $.each(images, function(index, image) {
-      var delay = (index * 75) + 'ms';
-      $(image).css('-webkit-animation-delay', delay);
-      $(image).css('-moz-animation-delay', delay);
-      $(image).css('-ms-animation-delay', delay);
-      $(image).css('-o-animation-delay', delay);
-      $(image).css('animation-delay', delay);
-      $(image).addClass('animated flipInX');
-    });
-  },
-  template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
-});
-feed.run();
+// var feed = new Instafeed({
+//   clientId: 'a415febb075e4f78a8db95973981df84',
+//   limit: 20,
+//   sortBy: 'most-liked',
+//   get: 'tagged',
+//   tagName: 'test',
+//   after: function () {
+//     var images = $("#instafeed").find('a');
+//     $.each(images, function(index, image) {
+//       var delay = (index * 75) + 'ms';
+//       $(image).css('-webkit-animation-delay', delay);
+//       $(image).css('-moz-animation-delay', delay);
+//       $(image).css('-ms-animation-delay', delay);
+//       $(image).css('-o-animation-delay', delay);
+//       $(image).css('animation-delay', delay);
+//       $(image).addClass('animated flipInX');
+//     });
+//   },
+//   template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
+// });
+// feed.run();
 
 //---------------------------------- WEDDING INFO ---------------------------
 
