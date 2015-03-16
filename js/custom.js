@@ -3,25 +3,25 @@ var main = function(){
   // ------------------------------- COUNTDOWN ------------------------
    //month is zero based
     //UTC is 8 hours different
-    var start = new Date(Date.UTC(2014, 10, 24, 1))
-    console.log(start);
-    start = start.getTime() / 1000;
-    var date = new Date(Date.UTC(2015, 7, 30, 1, 30, 0));
-    console.log(date);
-    var now   = new Date();
-    var diff = date.getTime() / 1000 - now.getTime() / 1000;
-    now = now.getTime() / 1000;
-    date = date.getTime() / 1000;
-
-
-    if ($('.countdown').length){
-     $('.countdown').final_countdown({
-       'start': 1362139200,
-       'end': date,
-
-       'now': now
-     });
-   }
+  //   var start = new Date(Date.UTC(2014, 10, 24, 1))
+  //   console.log(start);
+  //   start = start.getTime() / 1000;
+  //   var date = new Date(Date.UTC(2015, 7, 30, 1, 30, 0));
+  //   console.log(date);
+  //   var now   = new Date();
+  //   var diff = date.getTime() / 1000 - now.getTime() / 1000;
+  //   now = now.getTime() / 1000;
+  //   date = date.getTime() / 1000;
+   //
+   //
+  //   if ($('.countdown').length){
+  //    $('.countdown').final_countdown({
+  //      'start': 1362139200,
+  //      'end': date,
+   //
+  //      'now': now
+  //    });
+  //  }
 
 
 // ---------------------------------- GALLERY ----------------------------
@@ -45,53 +45,54 @@ $('#slider').flexslider({
 });
 
 
-// ------------------------- TWEENS & ANIMATIONS ------------------------- 
+// ------------------------- TWEENS & ANIMATIONS -------------------------
 
   // This example adds a duration to the tweens so they are synced to the scroll position
+  // Disable for touch devices
+  if (!Modernizr.touch){
+    var controller = $.superscrollorama();
 
-  var controller = $.superscrollorama();
+    // amount of scrolling over which the tween takes place (in pixels)
+    var scrollDuration = 0;
+    var x_pos = $(window).width()*2;
 
-  // amount of scrolling over which the tween takes place (in pixels)
-  var scrollDuration = 0; 
-  var x_pos = $(window).width()*2;
+    var LeftRightScrollBuilder = function(selectorObj){
+      var info_counter = 0;
+      selectorObj.each(function(){
+        $this = $(this);
+        var entry = 0;
+        switch (info_counter % 3){
+          case 0:
+          entry = x_pos * -1;
+          break;
+          case 1:
+          entry = x_pos * 1;
+          break;
+          default:
+          entry = 0;
+        }
+        if (entry == 0) {
+          TweenAppear($this);
+        }
+        else {
+          TweenFromSide($this, entry);
+        }
+        info_counter++;
+      })
+    };
 
-  var LeftRightScrollBuilder = function(selectorObj){
-    var info_counter = 0;
-    selectorObj.each(function(){
-      $this = $(this);
-      var entry = 0;
-      switch (info_counter % 3){
-        case 0:
-        entry = x_pos * -1;
-        break;
-        case 1: 
-        entry = x_pos * 1;
-        break;
-        default:
-        entry = 0;
-      }
-      if (entry == 0) {
-        TweenAppear($this);
-      }
-      else {
-        TweenFromSide($this, entry);
-      }
-      info_counter++;
-    })
-  };
+    var TweenFromSide = function(obj, entry){
+      $this = obj;
+      controller.addTween($this, TweenMax.from( $this, 1, { css: { left: entry }, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+    };
+    var TweenAppear = function(obj){
+      $this = obj;
+      controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
+    };
 
-  var TweenFromSide = function(obj, entry){
-    $this = obj;
-    controller.addTween($this, TweenMax.from( $this, 1, { css: { left: entry }, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-  };
-  var TweenAppear = function(obj){
-    $this = obj;
-    controller.addTween($this, TweenMax.from( $this, 2, {css:{opacity: 0, scaleX: .5}, ease: Elastic.easeOut.config(1, 0.75), y: 0 }), scrollDuration);
-  };
-
-  LeftRightScrollBuilder($(".infographic"));
-  LeftRightScrollBuilder($(".story-cards"));
-
+    LeftRightScrollBuilder($(".infographic"));
+    LeftRightScrollBuilder($(".story-cards"));
+  }
 
 
 // -------------------------------- INSTAGRAM -----------------------------
@@ -268,7 +269,7 @@ var wedding_party = [
   ,Title:"Family Friends"
   ,Description:"TBD"
   ,Order: 160
-}  
+}
 ];
 wedding_party = _.sortBy(wedding_party, 'Order');
 var html_builder = '';
@@ -297,7 +298,7 @@ $('#wedding_party').html(html_builder);
 var debug = false;
 
 var resizeInfoPanels = function(){
-  var groups = 
+  var groups =
   [
     [$("#where"), $("#when")]
     ,[$('#accommodations-left'), $('#accommodations-center'), $('#accommodations-right')]
@@ -340,13 +341,13 @@ var resetHeight = function(objArray){
     objArray[i].height('auto');
     if (debug == true) {
       console.log(objArray[i].attr('id') + ": " + objArray[i].height())
-    };    
+    };
   }
 }
 
 var checkHeight = function(objArray){
   for (var i = 0; i < objArray.length; i++){
-    console.log(objArray[i].attr('id') + ": " + objArray[i].height());    
+    console.log(objArray[i].attr('id') + ": " + objArray[i].height());
   }
 }
 
