@@ -1,0 +1,11 @@
+{
+  "transport": "ftp",
+  "hostname": "23.229.157.227",
+  "port": 21,
+  "username": "lmwed",
+  "password": "@u2NSIvu!VDQ63",
+  "target": "/public_html",
+  "ignore": [
+    ".git/**"
+  ]
+}
