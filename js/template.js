@@ -10,7 +10,7 @@
 (function($){
 	$(document).ready(function(){
 	
-	    $(".banner-image").backstretch('http://www.bandgphotography.com/wp-content/uploads/2015/03/lm01.jpg');
+	    $(".banner-image").backstretch('/assets/gallery/LM_ENG_0067.jpg');
 		
 		// Fixed header
 		//-----------------------------------------------

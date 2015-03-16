@@ -25,23 +25,23 @@ var main = function(){
 
 
 // ---------------------------------- GALLERY ----------------------------
-$('#carousel').flexslider({
-  animation: "slide",
-  controlNav: false,
-  animationLoop: false,
-  slideshow: true,
-  itemWidth: 210,
-  itemMargin: 5,
-  asNavFor: '#slider'
-});
+// $('#carousel').flexslider({
+//   animation: "slide",
+//   controlNav: false,
+//   animationLoop: false,
+//   slideshow: true,
+//   itemWidth: 210,
+//   itemMargin: 5,
+//   asNavFor: '#slider'
+// });
 
 $('#slider').flexslider({
   animation: "slide",
-  controlNav: false,
+  // controlNav: false,
   animationLoop: true,
   slideshow: true,
   smoothHeight: true,
-  sync: "#carousel"
+  // sync: "#carousel"
 });
 
 
