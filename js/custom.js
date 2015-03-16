@@ -290,6 +290,7 @@ $('#wedding_party').html(html_builder);
   $('.section-title').fitText();
   $('.section-subtitle').fitText(1, { maxFontSize: '30px' });
   $('.card-title').fitText(1, { maxFontSize: '60px' });
+  // $('.nav_text').fitText(1, { minFontSize: '14px'});
 
 
 };
