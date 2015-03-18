@@ -28,6 +28,14 @@
 
 /* -------------- MAIN ---------------*/
 
+.banner-image{
+  background-image: url('/assets/gallery/LM_ENG_0067.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
 body {
     font-family: Avenir Next LT Pro Demi Condensed;
     background-color: white;

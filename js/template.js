@@ -10,7 +10,7 @@
 (function($){
 	$(document).ready(function(){
 
-	    $(".banner-image").backstretch('/assets/gallery/LM_ENG_0067.jpg');
+	    // $(".banner-image").backstretch('/assets/gallery/LM_ENG_0067.jpg');
 
 		// Fixed header
 		//-----------------------------------------------
