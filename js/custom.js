@@ -182,7 +182,7 @@ var wedding_party = [
 }
 ,{
   Name:"Gaby"
-  ,Img:"images/portfolio-7.jpg"
+  ,Img:"/assets/party/Gaby.jpg"
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
   ,Title:"Michael\'s Sister From Another Mister"
