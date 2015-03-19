@@ -404,6 +404,29 @@ a {
   width: auto;
 }
 
+/*.timer_item{
+  border: 2px solid #0f0261;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+}*/
+.timer_label{
+  font-size: 20px;
+  text-align: center;
+  color: #0f0261;
+  font-family: SweetPea;
+}
+
+.timer_number{
+  line-height: .5em;
+  font-family: MoonFlowerBold;
+  font-size:50px;
+  text-align: center;
+  color: #ff0099;
+}
+
 /*#hampton{
     background-image:url('/assets/hampton_blue.png');
 }*/

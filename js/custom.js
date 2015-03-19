@@ -383,3 +383,39 @@ $(window).scroll(function(){
     nav.removeClass('nav-shadow');
   };
 });
+
+// set the date we're counting down to
+var target_date = new Date('Aug, 29, 2015, 17:00:00').getTime();
+
+// variables for time units
+var days, hours, minutes, seconds;
+
+// get tag element
+var countdown = document.getElementById("countdown");
+console.log(countdown);
+
+// update the tag with id "countdown" every 1 second
+setInterval(function () {
+
+    // find the amount of "seconds" between now and target
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+
+    // do some time calculations
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+
+    // format countdown string + set tag value
+    // countdown.innerHTML = '<div class="col-xs-3 timer_item"><div class="col-md-12 timer_number">' + days +  '</div><div class="col-md-12 timer_label"><b>Days</b></div></div><div class="col-xs-3 timer_item"><div class="col-md-12 timer_number">' + hours +  '</div><div class="col-md-12 timer_label"><b>Hrs</b></div></div><div class="col-xs-3 timer_item"><div class="col-md-12 timer_number">' + minutes +  '</div><div class="col-md-12 timer_label"><b>Mins</b></div></div><div class="col-xs-3 timer_item"><div class="col-md-12 timer_number">' + seconds +  '</div><div class="col-md-12 timer_label"><b>Secs</b></div></div>';
+    // document.getElementById("days").innerHTML = days;
+    $("#days").html(days + '<br><span class="timer_label">Days</span>');
+    $("#hours").html(hours + '<br><span class="timer_label">Hrs</span>');
+    $("#minutes").html(minutes + '<br><span class="timer_label">Mins</span>');
+    $("#seconds").html(seconds + '<br><span class="timer_label">Secs</span>');
+}, 1000);
