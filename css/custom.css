@@ -24,6 +24,19 @@
         color: #ff0099;
     }
 
+    @media (min-width: 768px){
+      .fixed-header-on .navbar-default .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .main-navigation .navbar-default .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+
+
 
 
 /* -------------- MAIN ---------------*/
