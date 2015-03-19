@@ -128,6 +128,7 @@ $('#slider').flexslider({
 var wedding_party = [
 {
   Name:"Adrienne"
+  ,Id:"Adrienne"
   ,Img:"/assets/party/Adrienne.jpg"
   ,Hover:"Maid of Honor"
   ,Type:"bridesmaid"
@@ -137,6 +138,7 @@ var wedding_party = [
 }
 ,{
   Name:"Ben"
+  ,Id:"Ben"
   ,Img:"/assets/party/Ben.jpg"
   ,Hover:"Best Man"
   ,Type:"groomsmen"
@@ -146,6 +148,7 @@ var wedding_party = [
 }
 ,{
   Name:"Lauren"
+  ,Id:"Lauren"
   ,Img:"/assets/party/Lauren_G.jpg"
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
@@ -155,6 +158,7 @@ var wedding_party = [
 }
 ,{
   Name:"Harry"
+  ,Id:"Harry"
   ,Img:"/assets/party/Harry.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
@@ -164,6 +168,7 @@ var wedding_party = [
 }
 ,{
   Name:"Hannah"
+  ,Id:"Hannah"
   ,Img:"/assets/party/Hannah.jpg"
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
@@ -173,6 +178,7 @@ var wedding_party = [
 }
 ,{
   Name:"Dishan"
+  ,Id:"Dishan"
   ,Img:"/assets/party/Dishan.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
@@ -182,6 +188,7 @@ var wedding_party = [
 }
 ,{
   Name:"Gaby"
+  ,Id:"Gaby"
   ,Img:"/assets/party/Gaby.jpg"
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
@@ -191,6 +198,7 @@ var wedding_party = [
 }
 ,{
   Name:"Sridhar"
+  ,Id:"Sridhar"
   ,Img:"/assets/party/sridhar.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
@@ -200,6 +208,7 @@ var wedding_party = [
 }
 ,{
   Name:"Katie"
+  ,Id:"Katie"
   ,Img:"/assets/party/junior.jpg"
   ,Hover:"Junior Bridesmaid"
   ,Type:"bridesmaid"
@@ -209,6 +218,7 @@ var wedding_party = [
 }
 ,{
   Name:"Darrin"
+  ,Id:"Darrin"
   ,Img:"/assets/party/Darrin.jpg"
   ,Hover:"Reader"
   ,Type:"other"
@@ -218,6 +228,7 @@ var wedding_party = [
 }
 ,{
   Name:"Diana"
+  ,Id:"Dianna"
   ,Img:"/assets/party/Diana.jpg"
   ,Hover:"Reader"
   ,Type:"other"
@@ -227,6 +238,7 @@ var wedding_party = [
 }
 ,{
   Name:"Pierson"
+  ,Id:"Pierson"
   ,Img:"/assets/party/Pierson.jpg"
   ,Hover:"Reader"
   ,Type:"other"
@@ -236,6 +248,7 @@ var wedding_party = [
 }
 ,{
   Name:"Kalina"
+  ,Id:"Kalina"
   ,Img:"/assets/party/Kalina.jpg"
   ,Hover:"Reader"
   ,Type:"other"
@@ -245,6 +258,7 @@ var wedding_party = [
 }
 ,{
   Name:"Ron"
+  ,Id:"Ron"
   ,Img:"/assets/party/Ron.jpg"
   ,Hover:"Reader"
   ,Type:"other"
@@ -254,6 +268,7 @@ var wedding_party = [
 }
 ,{
   Name:"Dave & Michele"
+  ,Id:"DaveMichele"
   ,Img:"/assets/party/DaveMichele.JPG"
   ,Hover:"Reader"
   ,Type:"other"
@@ -263,6 +278,7 @@ var wedding_party = [
 }
 ,{
   Name:"Leah"
+  ,Id:"Leah"
   ,Img:"/assets/party/Leah.jpg"
   ,Hover:"Reader"
   ,Type:"other"
@@ -275,7 +291,7 @@ wedding_party = _.sortBy(wedding_party, 'Order');
 var html_builder = '';
 for (var i = 0; i < wedding_party.length; i++){
   Person = wedding_party[i];
-  html_builder += '<div class="col-xs-12 col-sm-6 col-md-3 isotope-item ' + Person.Type + '"><div class="image-box"><div class="overlay-container"><img src="' + Person.Img + '" alt="' + Person.Name + '"><a class="overlay" data-toggle="modal" data-target="#' + Person.Name + '"><i class="fa fa-search-plus"></i><span>' + Person.Hover + '</span></a></div><a class="btn btn-default btn-block" data-toggle="modal" data-target="#' + Person.Name + '">' + Person.Name + '</a></div><!-- Modal --><div class="modal fade" id="' + Person.Name + '" tabindex="-1" role="dialog" aria-labelledby="' + Person.Name + '-label" aria-hidden="true"><div class="modal-dialog modal-md"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="' + Person.Name + '-label">' + Person.Title + '</h4></div><div class="modal-body"><h3>'+Person.Name+'</h3><div class="row"><div class="col-md-6">'+Person.Description+'</div><div class="col-md-6"><img src="' + Person.Img + '" alt="' + Person.Name + '"></div></div></div><div class="modal-footer"><button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button></div></div></div></div><!-- Modal end --></div>';
+  html_builder += '<div class="col-xs-12 col-sm-6 col-md-3 isotope-item ' + Person.Type + '"><div class="image-box"><div class="overlay-container"><img src="' + Person.Img + '" alt="' + Person.Id + '"><a class="overlay" data-toggle="modal" data-target="#' + Person.Id + '"><i class="fa fa-search-plus"></i><span>' + Person.Hover + '</span></a></div><a class="btn btn-default btn-block" data-toggle="modal" data-target="#' + Person.Id + '">' + Person.Name + '</a></div><!-- Modal --><div class="modal fade" id="' + Person.Id + '" tabindex="-1" role="dialog" aria-labelledby="' + Person.Id + '-label" aria-hidden="true"><div class="modal-dialog modal-md"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="' + Person.Id + '-label">' + Person.Title + '</h4></div><div class="modal-body"><h3>'+Person.Name+'</h3><div class="row"><div class="col-md-6">'+Person.Description+'</div><div class="col-md-6"><img src="' + Person.Img + '" alt="' + Person.Id + '"></div></div></div><div class="modal-footer"><button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button></div></div></div></div><!-- Modal end --></div>';
 };
 
 $('#wedding_party').html(html_builder);
