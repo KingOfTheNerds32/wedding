@@ -130,20 +130,20 @@ var wedding_party = [
   Name:"Adrienne"
   ,Id:"Adrienne"
   ,Img:"/assets/party/Adrienne.jpg"
-  ,Hover:"Maid of Honor"
+  ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
-  ,Title:"Lauren\'s Sister"
-  ,Description:"If you looked at Lauren and Adrienne side-by-side, you probably wouldn’t be able to tell that they are sisters. Though they may look very different, both sisters share a love of art. While Lauren enjoys viewing art and dabbling in arts and crafts, Adrienne produces unique and beautiful pieces as an artist and graphic design guru. Adrienne is the wildly creative member of the family. With her as the Maid of Honor, you can rest assured that there will be no puffed sleeves, frilly bows, or otherwise ugly bridal party outfits!"
+  ,Title:"Bridesmaid"
+  ,Description:"If you looked at Lauren and Adrienne side-by-side, you probably wouldn’t be able to tell that they are sisters. Though they may look very different, both sisters share a love of art. While Lauren enjoys viewing art and dabbling in arts and crafts, Adrienne produces unique and beautiful pieces as an artist and graphic design guru. Adrienne is the wildly creative member of the family. With her in the bridal party, you can rest assured that there will be no puffed sleeves, frilly bows, or otherwise ugly bridal party outfits!"
   ,Order: 10
 }
 ,{
   Name:"Ben"
   ,Id:"Ben"
   ,Img:"/assets/party/Ben.jpg"
-  ,Hover:"Best Man"
+  ,Hover:"Groomsman"
   ,Type:"groomsmen"
-  ,Title:"Michael\'s Oldest Friend"
-  ,Description:"TBD"
+  ,Title:"Groomsman"
+  ,Description:"Ben has been one of Michael's closest friends since the first grade. Over the last 20+ years, they have had more adventures than one can count: 12 years of school together, regularly beating each other up in Tae Kwon Do classes, working together, and traveling all over the world. It's only fitting that Ben be a part of launching this next great adventure in Michael & Lauren's lives."
   ,Order: 20
 }
 ,{
@@ -152,7 +152,7 @@ var wedding_party = [
   ,Img:"/assets/party/Lauren_G.jpg"
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
-  ,Title:"Lauren\'s Bestie"
+  ,Title:"Bridesmaid"
   ,Description:"Lauren and Lauren met in ballet class during high school and immediately bonded over their mutual interests in musicals, sparkly things, arts & crafts, dance, and what makes people tick. Lauren and Lauren can be found in heated discussion about the most recent episode of So You Think You Can Dance, making greeting cards with way too much glitter, or giggling hysterically over…nothing really."
   ,Order: 30
 }
@@ -162,8 +162,8 @@ var wedding_party = [
   ,Img:"/assets/party/Harry.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
-  ,Title:"Michael\'s College Roomate"
-  ,Description:"TBD"
+  ,Title:"Groomsman"
+  ,Description:"Harry是梁迈柯的好朋友。他们会见了在2006年在USC。那时候，他们就是同学们学习中文。然后，他们住在一起。毕业以后，他们还是特别好的朋友。"
   ,Order: 40
 }
 ,{
@@ -172,7 +172,7 @@ var wedding_party = [
   ,Img:"/assets/party/Hannah.jpg"
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
-  ,Title:"The Life of the Party"
+  ,Title:"Bridesmaid"
   ,Description:"Hannah has to tolerate sharing a small office with Lauren at The Guidance Center. Hannah can challenge anyone to a Disney song-singing or Friends line-quoting competition and probably win – she uses the competitive edge she honed as a collegiate athlete to go deep catalogue. Lauren can always count on Hannah to put things in perspective or insert a strategically placed corny joke. Most recently, Hannah discovered she can text message voice recordings, which has opened up a whole new world of humorous communication."
   ,Order: 50
 }
@@ -182,8 +182,8 @@ var wedding_party = [
   ,Img:"/assets/party/Dishan.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
-  ,Title:"Michael\'s Brother From Another Mother"
-  ,Description:"TBD"
+  ,Title:"Groomsman"
+  ,Description:"Friends since their freshmen year of college, Dishan and Michael's bromance has blossomed over their interests in technology, cars, and long drives along the California coastline. At this point, Dishan has become an adopted member of the Larner family, and it is rumored that folks actually prefer him over Michael."
   ,Order: 60
 }
 ,{
@@ -192,8 +192,8 @@ var wedding_party = [
   ,Img:"/assets/party/Gaby.jpg"
   ,Hover:"Bridesmaid"
   ,Type:"bridesmaid"
-  ,Title:"Michael\'s Sister From Another Mister"
-  ,Description:"When Lauren met Michael, she simultaneously acquired a thoughtful, smart, kind, new friend in Gaby. Gaby’s parents are best friends with Michael’s parents, and Gaby and Michael grew up together. While don’t ever get to snap a picture of Gaby (Gaby, you will be in photos on the wedding day – start preparing now), we have plenty of fun memories of this athlete, aspiring lawyer, and awesome new mommy."
+  ,Title:"Bridesmaid"
+  ,Description:"When Lauren met Michael, she also gained a thoughtful, smart, and kind friend in Gaby. Gaby’s parents are best friends with Michael’s parents, and Gaby and Michael grew up together. While we don’t ever get to snap a picture of Gaby (it took a group of us a couple of hours to find this one), we have plenty of fun memories of this athlete, aspiring lawyer, and awesome new mommy."
   ,Order: 70
 }
 ,{
@@ -202,8 +202,8 @@ var wedding_party = [
   ,Img:"/assets/party/sridhar.jpg"
   ,Hover:"Groomsman"
   ,Type:"groomsmen"
-  ,Title:"Michael\'s College Buddy"
-  ,Description:"TBD"
+  ,Title:"Groomsman"
+  ,Description:"A fellow Trojan and friend since the freshmen dorms, Sridhar was always the man of mystery amongst us. After a decade of friendship, we finally know all of the important details - like what his major was in college. Now that Sridhar lives abroad, helping to improve healthcare in Europe, we don't get to see him quite as often, but we're so excited that he's making the long trek to be a part of our special day."
   ,Order: 80
 }
 ,{
@@ -212,8 +212,8 @@ var wedding_party = [
   ,Img:"/assets/party/junior.jpg"
   ,Hover:"Junior Bridesmaid"
   ,Type:"bridesmaid"
-  ,Title:"Lauren\'s Coolest Cousin"
-  ,Description:"Katie is Lauren’s favorite cousin (but shhhh! Don’t tell the other cousins!). Katie has already given her expert opinion on her dress for the wedding and is a seasoned pro at being in the bridal party. She was recently featured as the flower girl in a friend’s wedding on TV! Lauren is excited to promote Katie to Jr. Bridesmaid. Lauren and Katie tend to gravitate toward each other at family gatherings, at which time Katie likes to scare Lauren by talking about all the scary movies she watches. Even when she is recounting a blood curdling movie plot, it is easy to see that Katie smart, funny, friendly, and kind."
+  ,Title:"Junior Bridesmaid"
+  ,Description:"As one of Lauren's favorite cousins, Katie has already given her expert opinion on her dress for the wedding and is a seasoned pro at being in the bridal party. She was recently featured as the flower girl in a friend’s wedding on TV! Lauren is excited to promote Katie to Jr. Bridesmaid. Lauren and Katie tend to gravitate toward each other at family gatherings, at which time Katie likes to scare Lauren by talking about all the scary movies she watches. Even when she is recounting a blood curdling movie plot, it is easy to see that Katie smart, funny, friendly, and kind."
   ,Order: 90
 }
 ,{
@@ -222,8 +222,8 @@ var wedding_party = [
   ,Img:"/assets/party/Darrin.jpg"
   ,Hover:"Reader"
   ,Type:"other"
-  ,Title:"Michael\'s Buddy"
-  ,Description:"TBD"
+  ,Title:"Reader"
+  ,Description:"Buddies since high school, Michael & Darrin spent years trying to out-do the other in friendly games of basketball. Darrin\'s big heart and thoughtful nature make him a wonderful friend and great new daddy. We can always count on Darrin to be the life of the party, especially when he's hosting his annual New Years or 4th of July bash."
   ,Order: 100
 }
 ,{
@@ -232,8 +232,8 @@ var wedding_party = [
   ,Img:"/assets/party/Diana.jpg"
   ,Hover:"Reader"
   ,Type:"other"
-  ,Title:"Lauren\'s Pal"
-  ,Description:"TBD"
+  ,Title:"Reader"
+  ,Description:"Lauren and Diana met in Peer Health Educators training at USC during undergrad and then worked as research assistants together in a psychology research lab. When they weren\'t working hard to become psychologists, they did awkward 10-shot photoshoots, spent an entire 24 hours trying to get out of the Atlanta airport, and made honey badger masks to wear during lab meetings. And yes, these activities are exactly as sketchy as they sound."
   ,Order: 130
 }
 ,{
@@ -242,8 +242,8 @@ var wedding_party = [
   ,Img:"/assets/party/Pierson.jpg"
   ,Hover:"Reader"
   ,Type:"other"
-  ,Title:"Michael\'s Amigo"
-  ,Description:"TBD"
+  ,Title:"Reader"
+  ,Description:"If Pierson told you about what he does for a living, he\'d have to kill you - or so he says. Also part of the Trojan gang, Pierson has always marched to the beat of his own drummer - creating his own major before launching a successful business doing...something. We do know that he\'s a cyber-security expert, avid photographer, and all-around awesome dude!"
   ,Order: 120
 }
 ,{
@@ -252,8 +252,8 @@ var wedding_party = [
   ,Img:"/assets/party/Kalina.jpg"
   ,Hover:"Reader"
   ,Type:"other"
-  ,Title:"Harry\'s Wife"
-  ,Description:"TBD"
+  ,Title:"Reader"
+  ,Description:"Michael met Kalina during college when he and Harry were roommates. As a good friend and extremely good sport, she was one of the few who was willing to brave the artic tundra that was their apartment at the time. Lucky for Harry, the extreme cold didn't scare Kalina off; otherwise, he might still be a bachelor! Kalina is one of the kindest and most thoughtful people that you will ever meet, and we are lucky to have her in our lives."
   ,Order: 110
 }
 ,{
@@ -262,18 +262,18 @@ var wedding_party = [
   ,Img:"/assets/party/Ron.jpg"
   ,Hover:"Reader"
   ,Type:"other"
-  ,Title:"Lauren\'s Uncle"
-  ,Description:"TBD"
+  ,Title:"Reader"
+  ,Description:"Although he lives in the unimaginable cold of Minnesota, Uncle Ron has always been an important and steadfast member of the family. Afterall, he gave Lauren her first CD from The Cure when she was 13. Lauren was a flower girl in Ron's wedding, and now Lauren and Michael are excited to have him participate in their special day."
   ,Order: 140
 }
 ,{
   Name:"Dave & Michele"
   ,Id:"DaveMichele"
   ,Img:"/assets/party/DaveMichele.JPG"
-  ,Hover:"Reader"
+  ,Hover:"Readers"
   ,Type:"other"
-  ,Title:"Famiy Friend"
-  ,Description:"TBD"
+  ,Title:"Readers"
+  ,Description:"Dave & Michele have been a permanent fixture in Michael\'s life since before he was even born. Having grown up with Michael's parents, this wonderful couple is the definition of family. Their warm hearts, open home, abnormally robust vocabulary, and pack of cute canines are only some of the reasons that we love them."
   ,Order: 150
 }
 ,{
@@ -282,8 +282,8 @@ var wedding_party = [
   ,Img:"/assets/party/Leah.jpg"
   ,Hover:"Reader"
   ,Type:"other"
-  ,Title:"Family Friends"
-  ,Description:"TBD"
+  ,Title:"Reader"
+  ,Description:"It's safe to say that Leah became one of Lauren's favorite cousins after she gave Lauren a Sanrio Surprises gigantic stuffed frog as a present one year when Lauren was little. Leah is kind, thoughtful, funny, and could probably put the rest of us to shame in a game of Disney trivia."
   ,Order: 160
 }
 ];
