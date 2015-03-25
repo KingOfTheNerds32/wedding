@@ -226,16 +226,16 @@ var wedding_party = [
   ,Description:"Buddies since high school, Michael & Darrin spent years trying to out-do the other in friendly games of basketball. Darrin\'s big heart and thoughtful nature make him a wonderful friend and great new daddy. We can always count on Darrin to be the life of the party, especially when he's hosting his annual New Years or 4th of July bash."
   ,Order: 100
 }
-,{
-  Name:"Diana"
-  ,Id:"Dianna"
-  ,Img:"/assets/party/Diana.jpg"
-  ,Hover:"Reader"
-  ,Type:"other"
-  ,Title:"Reader"
-  ,Description:"Lauren and Diana met in Peer Health Educators training at USC during undergrad and then worked as research assistants together in a psychology research lab. When they weren\'t working hard to become psychologists, they did awkward 10-shot photoshoots, spent an entire 24 hours trying to get out of the Atlanta airport, and made honey badger masks to wear during lab meetings. And yes, these activities are exactly as sketchy as they sound."
-  ,Order: 130
-}
+// ,{
+//   Name:"Diana"
+//   ,Id:"Dianna"
+//   ,Img:"/assets/party/Diana.jpg"
+//   ,Hover:"Reader"
+//   ,Type:"other"
+//   ,Title:"Reader"
+//   ,Description:"Lauren and Diana met in Peer Health Educators training at USC during undergrad and then worked as research assistants together in a psychology research lab. When they weren\'t working hard to become psychologists, they did awkward 10-shot photoshoots, spent an entire 24 hours trying to get out of the Atlanta airport, and made honey badger masks to wear during lab meetings. And yes, these activities are exactly as sketchy as they sound."
+//   ,Order: 130
+// }
 ,{
   Name:"Pierson"
   ,Id:"Pierson"
