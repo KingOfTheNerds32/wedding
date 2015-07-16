@@ -126,17 +126,17 @@ $('#slider').flexslider({
 
 // --------------------------------- WEDDING PARTY --------------------------
 var wedding_party = [
+// {
+//   Name:"Adrienne"
+//   ,Id:"Adrienne"
+//   ,Img:"/assets/party/Adrienne.jpg"
+//   ,Hover:"Bridesmaid"
+//   ,Type:"bridesmaid"
+//   ,Title:"Bridesmaid"
+//   ,Description:"If you looked at Lauren and Adrienne side-by-side, you probably wouldn’t be able to tell that they are sisters. Though they may look very different, both sisters share a love of art. While Lauren enjoys viewing art and dabbling in arts and crafts, Adrienne produces unique and beautiful pieces as an artist and graphic design guru. Adrienne is the wildly creative member of the family. With her in the bridal party, you can rest assured that there will be no puffed sleeves, frilly bows, or otherwise ugly bridal party outfits!"
+//   ,Order: 10
+// }
 {
-  Name:"Adrienne"
-  ,Id:"Adrienne"
-  ,Img:"/assets/party/Adrienne.jpg"
-  ,Hover:"Bridesmaid"
-  ,Type:"bridesmaid"
-  ,Title:"Bridesmaid"
-  ,Description:"If you looked at Lauren and Adrienne side-by-side, you probably wouldn’t be able to tell that they are sisters. Though they may look very different, both sisters share a love of art. While Lauren enjoys viewing art and dabbling in arts and crafts, Adrienne produces unique and beautiful pieces as an artist and graphic design guru. Adrienne is the wildly creative member of the family. With her in the bridal party, you can rest assured that there will be no puffed sleeves, frilly bows, or otherwise ugly bridal party outfits!"
-  ,Order: 10
-}
-,{
   Name:"Ben"
   ,Id:"Ben"
   ,Img:"/assets/party/Ben.jpg"
@@ -250,9 +250,9 @@ var wedding_party = [
   Name:"Kalina"
   ,Id:"Kalina"
   ,Img:"/assets/party/Kalina.jpg"
-  ,Hover:"Reader"
-  ,Type:"other"
-  ,Title:"Reader"
+  ,Hover:"Bridesmaid"
+  ,Type:"bridesmaid"
+  ,Title:"Bridesmaid"
   ,Description:"Michael met Kalina during college when he and Harry were roommates. As a good friend and extremely good sport, she was one of the few who was willing to brave the artic tundra that was their apartment at the time. Lucky for Harry, the extreme cold didn't scare Kalina off; otherwise, he might still be a bachelor! Kalina is one of the kindest and most thoughtful people that you will ever meet, and we are lucky to have her in our lives."
   ,Order: 110
 }
